@@ -1,9 +1,5 @@
 import { VFC } from 'react';
 
-const Home: VFC = () => (
-  <div>
-    <h1>test</h1>
-  </div>
-);
+const Home: VFC = () => <div>test</div>;
 
 export default Home;
