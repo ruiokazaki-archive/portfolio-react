@@ -18,6 +18,7 @@
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "4.0.3",
     "ress": "^4.0.0",
+    "styled-components": "^5.3.1",
     "typescript": "^4.2.3",
     "web-vitals": "^1.1.1"
   },
@@ -59,6 +60,7 @@
   "devDependencies": {
     "@types/prettier": "^2.2.3",
     "@types/react-helmet": "^6.1.0",
+    "@types/styled-components": "^5.1.14",
     "@types/stylelint": "^9.10.1",
     "@types/testing-library__jest-dom": "^5.9.5",
     "@types/testing-library__user-event": "^4.2.0",
@@ -79,10 +81,6 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-order": "^4.1.0",
     "typesync": "^0.8.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": ". ./lint-staged-around",
-    "pre-push": ". ./test-around"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
