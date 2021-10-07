@@ -1,4 +1,4 @@
 import tw from 'tailwind-styled-components';
 
-const BackgroundWrap = tw.div`relative background`;
-export default BackgroundWrap;
+const SectionWrap = tw.div`relative background`;
+export default SectionWrap;

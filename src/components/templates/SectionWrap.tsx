@@ -1,12 +1,12 @@
 import { VFC } from 'react';
-import BackgroundWrap from './SectionWrap.style';
+import SectionWrap from './SectionWrap.style';
 
 type Props = {
   children: React.ReactNode;
 };
 
 const SectionBackground: VFC<Props> = ({ children }) => (
-  <BackgroundWrap>{children}</BackgroundWrap>
+  <SectionWrap>{children}</SectionWrap>
 );
 
 export default SectionBackground;
