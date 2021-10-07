@@ -1,4 +1,5 @@
 import { VFC } from 'react';
+import { BackgroundText } from './SectionBackground.style';
 
 type Props = {
   sectionTitle: string;
@@ -7,7 +8,7 @@ type Props = {
 
 const SectionBackground: VFC<Props> = ({ sectionTitle, children }) => (
   <div>
-    <p>{sectionTitle}</p>
+    <BackgroundText>{sectionTitle}</BackgroundText>
     {children}
   </div>
 );

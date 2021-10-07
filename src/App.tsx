@@ -3,8 +3,6 @@ import { Navigate, Route, Routes, useLocation } from 'react-router';
 
 import Home from 'components/pages/Home';
 
-import './App.css';
-
 const App: VFC = () => {
   const { hash, pathname } = useLocation();
 

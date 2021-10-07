@@ -1,8 +1,11 @@
 import { VFC } from 'react';
+import SectionBackground from '../../containers/organisms/SectionBackground';
 
 const Home: VFC = () => (
   <div>
-    <h1>テスト</h1>
+    <SectionBackground sectionTitle="main contents">
+      メインコンテンツ
+    </SectionBackground>
   </div>
 );
 
