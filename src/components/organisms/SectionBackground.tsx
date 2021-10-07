@@ -3,13 +3,11 @@ import { BackgroundWrap, BackgroundText } from './SectionBackground.style';
 
 type Props = {
   sectionTitle: string;
-  children: React.ReactNode;
 };
 
-const SectionBackground: VFC<Props> = ({ sectionTitle, children }) => (
+const SectionBackground: VFC<Props> = ({ sectionTitle }) => (
   <BackgroundWrap>
     <BackgroundText>{sectionTitle}</BackgroundText>
-    {children}
   </BackgroundWrap>
 );
 

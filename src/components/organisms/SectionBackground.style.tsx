@@ -2,18 +2,21 @@ import styled from 'styled-components';
 import tw from 'tailwind-styled-components';
 
 export const BackgroundWrap = tw.div`
+  flex
+  items-center
+  justify-center
   w-full
   h-full
   font-bold
   overflow-hidden
+  absolute
 `;
 
 const BackgroundTextStyle = styled.p`
-  transform: rotate(-30deg);
-  -webkit-text-stroke: 1px $gray1;
+  -webkit-text-stroke: 1px gray;
   opacity: 0.3;
-  z-index: -1;
   font-size: 550px;
+  transform: rotate(-30deg);
 `;
 
 export const BackgroundText = tw(BackgroundTextStyle)`

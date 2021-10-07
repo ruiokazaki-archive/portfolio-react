@@ -11,7 +11,7 @@ const App: VFC = () => {
   }, [hash, pathname]);
 
   return (
-    <div className="container">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="works" element={<Works />}>

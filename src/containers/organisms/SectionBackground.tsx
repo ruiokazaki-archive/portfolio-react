@@ -3,17 +3,12 @@ import SectionBackground from '../../components/organisms/SectionBackground';
 
 type Props = {
   sectionTitle: string;
-  children: React.ReactNode;
 };
 
-const EnhancedSectionBackground: VFC<Props> = ({ sectionTitle, children }) => {
+const EnhancedSectionBackground: VFC<Props> = ({ sectionTitle }) => {
   const sectionTitleToUpperCase: string = sectionTitle.toUpperCase();
 
-  return (
-    <SectionBackground sectionTitle={sectionTitleToUpperCase}>
-      {children}
-    </SectionBackground>
-  );
+  return <SectionBackground sectionTitle={sectionTitleToUpperCase} />;
 };
 
 export default EnhancedSectionBackground;
