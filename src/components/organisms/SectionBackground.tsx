@@ -7,7 +7,7 @@ type Props = {
 };
 
 const SectionBackground: VFC<Props> = ({ sectionTitle, children }) => (
-  <div>
+  <div className="hover:bg-green-700">
     <BackgroundText>{sectionTitle}</BackgroundText>
     {children}
   </div>
