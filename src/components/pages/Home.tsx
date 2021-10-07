@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 import SectionWrap from '../templates/SectionWrap';
-import SectionBackground from '../../containers/organisms/SectionBackground';
+import SectionBackground from '../../containers/molecules/SectionBackground';
 
 const Home: VFC = () => (
   <SectionWrap>

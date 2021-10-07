@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import SectionBackground from '../../components/organisms/SectionBackground';
+import SectionBackground from '../../components/molecules/SectionBackground';
 
 type Props = {
   sectionTitle: string;
