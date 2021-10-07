@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import { BackgroundWrap } from './SectionWrap.style';
+import BackgroundWrap from './SectionWrap.style';
 
 type Props = {
   children: React.ReactNode;
