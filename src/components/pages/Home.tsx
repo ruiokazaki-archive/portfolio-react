@@ -1,10 +1,11 @@
 import { VFC } from 'react';
+import SectionWrap from './SectionWrap';
 import SectionBackground from '../../containers/organisms/SectionBackground';
 
 const Home: VFC = () => (
-  <div className="relative">
+  <SectionWrap>
     <SectionBackground sectionTitle="maincontents" />
-  </div>
+  </SectionWrap>
 );
 
 export default Home;
