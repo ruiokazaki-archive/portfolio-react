@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import { BackgroundText } from './SectionBackground.style';
+import { BackgroundWrap, BackgroundText } from './SectionBackground.style';
 
 type Props = {
   sectionTitle: string;
@@ -7,10 +7,10 @@ type Props = {
 };
 
 const SectionBackground: VFC<Props> = ({ sectionTitle, children }) => (
-  <div className="hover:bg-green-700">
+  <BackgroundWrap>
     <BackgroundText>{sectionTitle}</BackgroundText>
     {children}
-  </div>
+  </BackgroundWrap>
 );
 
 export default SectionBackground;

@@ -24,6 +24,7 @@
     "ress": "^4.0.0",
     "styled-components": "^5.3.1",
     "stylelint": "^13.13.1",
+    "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.2.3",
     "web-vitals": "^1.1.1"
