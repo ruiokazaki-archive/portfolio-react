@@ -4,6 +4,7 @@ import tw from 'tailwind-styled-components';
 const SectionTitleStyle = styled.h2`
   font-size: 18px;
   color: #f858f1;
+  margin-bottom: 30px;
   &:before {
     content: '';
     display: block;
@@ -20,7 +21,7 @@ const SectionTitleStyle = styled.h2`
   }
 `;
 const SectionTitle = tw(SectionTitleStyle)`
-  font-normal relative mb-8
+  font-normal relative
 `;
 
 export default SectionTitle;
