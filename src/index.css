@@ -44,11 +44,11 @@ select {
 }
 
 /* background styles */
-.home > div:nth-of-type(odd) .background {
+#root > div.background:nth-of-type(odd) {
   background-color: #110e17;
   color: #14121c;
 }
-.home > div:nth-of-type(even) .background {
+#root > div.background:nth-of-type(even) {
   background-color: #14121c;
   color: #110e17;
 }
