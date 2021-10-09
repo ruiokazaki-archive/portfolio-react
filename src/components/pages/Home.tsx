@@ -1,10 +1,10 @@
 import { VFC } from 'react';
-import SectionWrap from '../templates/SectionWrap';
+import About from '../organisms/About';
 
 const Home: VFC = () => (
-  <SectionWrap sectionTitle="MainContent">
-    <p>てすとてきすと</p>
-  </SectionWrap>
+  <>
+    <About />
+  </>
 );
 
 export default Home;
