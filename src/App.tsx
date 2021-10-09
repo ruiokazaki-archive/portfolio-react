@@ -11,7 +11,7 @@ const App: VFC = () => {
   }, [hash, pathname]);
 
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="works" element={<Works />}>
@@ -19,7 +19,7 @@ const App: VFC = () => {
         </Route> */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
