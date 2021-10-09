@@ -14,7 +14,7 @@ const SectionTitleStyle = styled.h2`
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    border: 2px solid $pink1;
+    border: 2px solid #f858f1;
     border-radius: 50%;
     filter: drop-shadow(0px 0px 4px #000000);
   }
