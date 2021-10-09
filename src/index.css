@@ -9,8 +9,8 @@
 }
 html {
   font-size: 62.5%;
-  background-color: #110e17;
-  color: #f2f2f2;
+  background-color: theme('colors.black1');
+  color: thema('colors.white1');
 }
 header,
 main,
@@ -45,12 +45,12 @@ select {
 
 /* background styles */
 #root > div.background:nth-of-type(odd) {
-  background-color: #110e17;
-  color: #14121c;
+  background-color: theme('colors.black1');
+  color: theme('colors.black2');
 }
 #root > div.background:nth-of-type(even) {
-  background-color: #14121c;
-  color: #110e17;
+  background-color: theme('colors.black2');
+  color: theme('colors.black1');
 }
 
 figure,
