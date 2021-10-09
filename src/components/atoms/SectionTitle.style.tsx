@@ -16,11 +16,10 @@ const SectionTitleStyle = styled.h2`
     height: 10px;
     border: 2px solid #f858f1;
     border-radius: 50%;
-    filter: drop-shadow(0px 0px 4px #000000);
   }
 `;
 const SectionTitle = tw(SectionTitleStyle)`
-  font-normal relative text-pink1
+  font-normal relative text-pink1 shadow
 `;
 
 export default SectionTitle;
