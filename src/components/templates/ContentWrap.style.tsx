@@ -16,5 +16,5 @@ const ContentWrapStyle = styled.div`
     height: 100%;
   }
 `;
-const ContentWrap = tw(ContentWrapStyle)`mx-auto relative`;
+const ContentWrap = tw(ContentWrapStyle)`mx-auto relative text-white1`;
 export default ContentWrap;
