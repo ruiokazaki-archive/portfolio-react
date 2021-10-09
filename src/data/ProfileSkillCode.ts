@@ -8,7 +8,11 @@ export type ProfileCode = {
 type constructor = {
   name: string;
   age: number;
-  birthday: `${string}-${string}-${string}`;
+  birthday: {
+    year: number;
+    month: number;
+    date: number;
+  };
   live: string;
   email: `${string}@${string}.${string}`;
 };
@@ -17,7 +21,11 @@ export const ProfileData: ProfileCode = {
   constructor: {
     name: 'string',
     age: 1,
-    birthday: '2002-02-06',
+    birthday: {
+      year: 2002,
+      month: 2,
+      date: 6,
+    },
     live: 'Kobe',
     email: 'okazaki200226@gmail.com',
   },
