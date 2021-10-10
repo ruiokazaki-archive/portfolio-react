@@ -38,7 +38,7 @@ const getAge = () => {
 
 export const ProfileData: ProfileCode = {
   constructor: {
-    name: 'string',
+    name: '岡崎 流依',
     age: getAge(),
     birthday,
     live: 'Kobe',
