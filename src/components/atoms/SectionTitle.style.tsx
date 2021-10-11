@@ -19,7 +19,7 @@ const SectionTitleStyle = styled.h2`
   }
 `;
 const SectionTitle = tw(SectionTitleStyle)`
-  font-normal relative text-pink1 shadow
+  font-normal relative text-pink1
 `;
 
 export default SectionTitle;
