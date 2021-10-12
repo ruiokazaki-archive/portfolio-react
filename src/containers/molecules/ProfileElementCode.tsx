@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-
+import DOMPurify from 'dompurify';
 import { ProfileCode } from '../../data/ProfileSkillCode';
 
 type Props = {
@@ -38,7 +38,10 @@ const ProfileElementCode: VFC<Props> = ({ profileData }) => {
   }
   `;
 
-  return <div dangerouslySetInnerHTML={{ __html: sanitizer(beforeCode) }} />;
+  return (
+    // eslint-disable-next-line react/no-danger
+    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(beforeCode) }} />
+  );
 };
 
 export default ProfileElementCode;
