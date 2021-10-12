@@ -1,4 +1,4 @@
-import { VFC } from 'react';
+import { VFC, ReactNode } from 'react';
 import SectionWrap from './SectionWrap.style';
 import ContentWrap from './ContentWrap';
 import SectionBackground from '../../containers/molecules/SectionBackground';
@@ -6,7 +6,7 @@ import SectionTitle from '../atoms/SectionTitle';
 
 type Props = {
   sectionTitle: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const Section: VFC<Props> = ({ sectionTitle, children }) => (

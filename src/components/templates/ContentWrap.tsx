@@ -1,8 +1,8 @@
-import { VFC } from 'react';
+import { VFC, ReactNode } from 'react';
 import ContentWrap from './ContentWrap.style';
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const SectionBackground: VFC<Props> = ({ children }) => (
