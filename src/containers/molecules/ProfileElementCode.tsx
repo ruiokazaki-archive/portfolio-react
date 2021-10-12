@@ -1,5 +1,6 @@
 import { VFC } from 'react';
 import DOMPurify from 'dompurify';
+
 import { ProfileCode } from '../../data/ProfileSkillCode';
 
 type Props = {
