@@ -1,4 +1,3 @@
-/* eslint-disable no-irregular-whitespace */
 import { VFC } from 'react';
 
 import { ProfileCode } from '../../data/ProfileSkillCode';
