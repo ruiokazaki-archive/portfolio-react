@@ -23,11 +23,11 @@ const ProfileCodeWrapStyle = styled.div`
   }
   .codeWrap::before {
     content: attr(data-value);
-    position: absolute;
     display: block;
     width: 20px;
-    left: 0;
-    right: 930px;
+    height: 100%;
+    position: absolute;
+    left: -500px;
     margin: auto;
     font-size: 14px;
     text-align: end;
