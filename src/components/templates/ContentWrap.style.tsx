@@ -12,7 +12,7 @@ const ContentWrapStyle = styled.div`
     background-color: #f858f1;
     top: 0;
     left: -2px;
-    z-index: 2;
+    z-index: 10;
     height: 100%;
   }
 `;
