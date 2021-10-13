@@ -1,13 +1,13 @@
 import { VFC } from 'react';
-import DOMPurify from 'dompurify';
 
 import { ProfileCode } from '../../data/ProfileSkillCode';
+import ProfileElementCode from '../../components/atoms/ProfileElementCode';
 
 type Props = {
   profileData: ProfileCode;
 };
 
-const ProfileElementCode: VFC<Props> = ({ profileData }) => {
+const EnhancedProfileElementCode: VFC<Props> = ({ profileData }) => {
   const createChar = (ary: string[]): string => {
     let char = '';
     for (let i = 0; i < ary.length; i += 1) {
@@ -85,10 +85,7 @@ const ProfileElementCode: VFC<Props> = ({ profileData }) => {
     return afterCode;
   };
 
-  return (
-    // eslint-disable-next-line react/no-danger
-    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(addClass()) }} />
-  );
+  return <ProfileElementCode afterCode={addClass()} />;
 };
 
-export default ProfileElementCode;
+export default EnhancedProfileElementCode;
