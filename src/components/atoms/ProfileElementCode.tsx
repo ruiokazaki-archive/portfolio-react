@@ -9,9 +9,9 @@ type Props = {
 };
 
 const ProfileElementCode: VFC<Props> = ({ afterCode }) => (
-  <ProfileCodeWrap>
-    <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(afterCode) }} />
-  </ProfileCodeWrap>
+  <ProfileCodeWrap
+    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(afterCode) }}
+  />
 );
 
 export default ProfileElementCode;
