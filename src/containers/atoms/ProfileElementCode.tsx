@@ -17,7 +17,7 @@ const EnhancedProfileElementCode: VFC<Props> = ({ profileData }) => {
     return char.slice(0, -2);
   };
 
-  const beforeCode = `class RuiOkazaki {
+  const beforeCode = `class OkazakiRui {
     constructor() {
       this.name = "${profileData.constructor.name}";
       this.age = ${profileData.constructor.age};
@@ -70,7 +70,7 @@ const EnhancedProfileElementCode: VFC<Props> = ({ profileData }) => {
       `<span class='code-class'>class\u3000</span>`,
     );
     afterCode = afterCode.replace(
-      /RuiOkazaki/g,
+      /OkazakiRui/g,
       `<span class='code-className'>$&</span>`,
     );
     afterCode = afterCode.replace(
