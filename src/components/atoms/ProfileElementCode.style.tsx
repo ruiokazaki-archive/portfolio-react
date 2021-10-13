@@ -2,14 +2,26 @@ import styled from 'styled-components';
 import tw from 'tailwind-styled-components';
 
 const ProfileCodeWrapStyle = styled.div`
-  .code .codeWrap {
+  font-size: 16px;
+  line-height: 24px;
+  .codeWrap {
     position: relative;
+    z-index: 2;
   }
-  .code .codeWrap:hover {
+  .codeWrap:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
     background-color: #1a1526;
     cursor: default;
   }
-  .code .codeWrap::before {
+  .codeWrap::before {
     content: attr(data-value);
     position: absolute;
     display: block;
@@ -20,31 +32,31 @@ const ProfileCodeWrapStyle = styled.div`
     font-size: 14px;
     text-align: end;
   }
-  .code .codeWrap .code {
+  .codeWrap .code {
     display: block;
     width: 868px;
     margin: 0 auto;
     padding: 0 22px;
   }
-  .code .code-class {
+  .code-class {
     color: #3691ff;
   }
-  .code .code-className {
+  .code-className {
     color: #ff6480;
   }
-  .code .code-string {
+  .code-string {
     color: #f9c859;
   }
-  .code .code-number {
+  .code-number {
     color: #ff78f8;
   }
-  .code .code-methods {
+  .code-methods {
     color: #3fc56b;
   }
-  .code .code-brackets {
+  .code-brackets {
     color: #7a82da;
   }
-  .code .code-property {
+  .code-property {
     color: #ce9887;
   }
 `;
