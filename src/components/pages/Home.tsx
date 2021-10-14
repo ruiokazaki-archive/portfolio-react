@@ -1,13 +1,11 @@
 import { VFC } from 'react';
 import About from '../organisms/About';
-import Profile from '../organisms/Profile';
-
-import { ProfileData } from '../../data/ProfileSkillCode';
+import Profile from '../../containers/organisms/Profile';
 
 const Home: VFC = () => (
   <>
     <About />
-    <Profile profileData={ProfileData} />
+    <Profile />
   </>
 );
 
