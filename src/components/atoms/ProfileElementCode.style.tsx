@@ -7,6 +7,7 @@ const ProfileCodeWrapStyle = styled.div`
   .codeWrap {
     position: relative;
     z-index: 2;
+    color: #f2f2f2;
   }
   .codeWrap:hover::after {
     content: '';
@@ -22,12 +23,13 @@ const ProfileCodeWrapStyle = styled.div`
     cursor: default;
   }
   .codeWrap::before {
+    color: #f2f2f2;
     content: attr(data-value);
     display: block;
     width: 20px;
     height: 100%;
     position: absolute;
-    left: -500px;
+    left: -70px;
     margin: auto;
     font-size: 14px;
     text-align: end;
