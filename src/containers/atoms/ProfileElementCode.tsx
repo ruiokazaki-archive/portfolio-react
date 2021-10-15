@@ -1,4 +1,4 @@
-import { VFC, useEffect } from 'react';
+import { VFC } from 'react';
 
 import { ProfileCode } from '../../data/ProfileSkillCode';
 import ProfileElementCode from '../../components/atoms/ProfileElementCode';
@@ -84,13 +84,6 @@ const EnhancedProfileElementCode: VFC<Props> = ({ profileData }) => {
 
     return afterCode;
   };
-
-  useEffect(() => {
-    const codeWrap = document.querySelectorAll('.codeWrap');
-    codeWrap.forEach((element, index: number) =>
-      element.setAttribute('data-value', String(index + 1)),
-    );
-  });
 
   return <ProfileElementCode afterCode={addClass()} />;
 };
