@@ -17,6 +17,7 @@ const BackgroundTextStyle = styled.p`
   opacity: 0.3;
   font-size: 550px;
   transform: rotate(-30deg);
+  cursor: default;
 `;
 
 export const BackgroundText = tw(BackgroundTextStyle)`
