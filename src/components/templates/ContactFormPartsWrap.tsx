@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { VFC, ReactNode } from 'react';
+import { Label, LabelTitle } from './ContactFormPartsWrap.style';
 
 type Props = {
   LabelText: string;
@@ -7,12 +8,10 @@ type Props = {
 };
 
 const FormInput: VFC<Props> = ({ LabelText, children }) => (
-  <div>
-    <label>
-      {LabelText}
-      {children}
-    </label>
-  </div>
+  <Label>
+    <LabelTitle>{LabelText}</LabelTitle>
+    {children}
+  </Label>
 );
 
 export default FormInput;
