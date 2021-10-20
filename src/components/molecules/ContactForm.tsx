@@ -1,16 +1,17 @@
 import { VFC, ReactNode } from 'react';
+import Form from './ContactForm.style';
 
 type Props = {
   children: ReactNode;
 };
 
 const SectionBackground: VFC<Props> = ({ children }) => (
-  <form
+  <Form
     action="https://click.ecc.ac.jp/ecc/rokazaki/sendmail.php"
     method="post"
   >
     {children}
-  </form>
+  </Form>
 );
 
 export default SectionBackground;
