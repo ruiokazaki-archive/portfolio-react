@@ -37,8 +37,6 @@ const ProfileCodeWrapStyle = styled.div`
   .codeWrap .code {
     display: block;
     width: 868px;
-    margin: 0 auto;
-    padding: 0 22px;
   }
   .code-class {
     color: #3691ff;
