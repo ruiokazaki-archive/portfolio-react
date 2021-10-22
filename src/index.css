@@ -38,6 +38,11 @@ select {
   appearance: none;
 }
 
+.labelup {
+  top: -15px;
+  font-size: 12px;
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 0;
