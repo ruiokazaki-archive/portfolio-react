@@ -38,7 +38,7 @@ select {
   appearance: none;
 }
 
-.labelup {
+label.labelup {
   top: -15px;
   font-size: 12px;
 }
