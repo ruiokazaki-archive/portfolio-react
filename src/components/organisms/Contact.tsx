@@ -16,6 +16,7 @@ const Profile: VFC = () => {
   const nameLabelRef = useRef<HTMLLabelElement>(null);
   const emailLabelRef = useRef<HTMLLabelElement>(null);
   const messageLabelRef = useRef<HTMLLabelElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
 
   const labelRefClassChange = (
     ref: RefObject<HTMLLabelElement>,
@@ -48,6 +49,11 @@ const Profile: VFC = () => {
   };
   const handleMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
     labelRefClassChange(messageLabelRef, e);
+    if (messageRef.current !== null) {
+      messageRef.current.style.height = `${
+        messageRef.current.value.split('\n').length * 20 + 30
+      }px`;
+    }
   };
   const focusClassChange = (
     e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -105,6 +111,7 @@ const Profile: VFC = () => {
             onBlur={focusoutClassChange}
             name="message"
             id="message"
+            ref={messageRef}
           />
           <FocusBorder />
         </Col1>
