@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind-styled-components';
 
-// Contents Wrap
-
-// Left contnests
 const LeftContentsStyle = styled.section`
   width: 487px;
   height: 400px;
@@ -21,7 +18,7 @@ export const ProfileName = tw(ProfileNameStyle)`font-bold order-2`;
 const ProfileSchoolStyle = styled.p`
   font-size: 14px;
 `;
-export const ProfileSchool = tw(ProfileSchoolStyle)` order-1`;
+export const ProfileSchool = tw(ProfileSchoolStyle)`text-gray1 order-1`;
 
 const ProfileIntroductionStyle = styled.p`
   font-size: 14px;
