@@ -1,3 +1,12 @@
+import InnerPeaceCafe from '../assets/svg/logo_IPC.svg';
+import nomino from '../assets/svg/logo_nomino.svg';
+import tappiness from '../assets/svg/logo_tappiness.svg';
+import Spark from '../assets/svg/logo_spark.svg';
+import portfolio from '../assets/svg/logo_portfolio.svg';
+import ECC from '../assets/svg/logo_ECC.svg';
+import Fribo from '../assets/svg/logo_Fribo.svg';
+import nonst from '../assets/svg/logo_nonst.svg';
+
 export type WorkDataType = {
   id: number;
   title: string;
@@ -27,8 +36,8 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/InnerPeaceCafe',
     productionLink:
       'https://click.ecc.ac.jp/ecc/rokazaki/works/InnerPeaceCafe/',
-    img: './images/IPC_screen.jpg',
-    logo: './svg/logo_IPC.svg',
+    img: 'InnerPeaceCafe',
+    logo: InnerPeaceCafe,
   },
   {
     id: 2,
@@ -44,7 +53,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/nomino',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nomino/',
     img: './images/nomino_screen.jpg',
-    logo: './svg/logo_nomino.svg',
+    logo: nomino,
   },
   {
     id: 3,
@@ -60,7 +69,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/tappiness',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/tappiness/',
     img: './images/tappiness_screen.jpg',
-    logo: './svg/logo_tappiness.svg',
+    logo: tappiness,
   },
   {
     id: 4,
@@ -76,7 +85,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/spark',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/spark/',
     img: './images/spark_screen.jpg',
-    logo: './svg/logo_spark.svg',
+    logo: Spark,
   },
   {
     id: 5,
@@ -92,7 +101,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/portfolio_v1',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/',
     img: './images/portfolio_screen.jpg',
-    logo: './svg/logo_portfolio.svg',
+    logo: portfolio,
   },
   {
     id: 6,
@@ -108,7 +117,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/spark',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/ECCApp-LP/',
     img: './images/ECC-LP_screen.jpg',
-    logo: './svg/logo_ECC.svg',
+    logo: ECC,
   },
   {
     id: 7,
@@ -124,7 +133,7 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/Fribo',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/fribo/',
     img: './images/Fribo_screen.jpg',
-    logo: './svg/logo_Fribo.svg',
+    logo: Fribo,
   },
   {
     id: 8,
@@ -140,6 +149,6 @@ export const worksData: WorkDataType[] = [
     githubLink: 'https://github.com/OkazakiRui/nonst',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-app/',
     img: './images/nonst_screen.jpg',
-    logo: './svg/logo_nonst.svg',
+    logo: nonst,
   },
 ];
