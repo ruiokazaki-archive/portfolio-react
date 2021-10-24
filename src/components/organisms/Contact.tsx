@@ -1,6 +1,6 @@
 import { VFC, RefObject, ChangeEvent, FocusEvent } from 'react';
 
-import SectionWrap from '../templates/SectionWrap';
+import SectionLastWrap from '../templates/SectionLastWrap';
 import ContactForm from '../molecules/ContactForm';
 import {
   Col2Wrap,
@@ -40,7 +40,7 @@ const Contact: VFC<Props> = ({
   focusClassChange,
   focusoutClassChange,
 }) => (
-  <SectionWrap sectionTitle="Contact">
+  <SectionLastWrap sectionTitle="Contact">
     <ContactForm>
       <Col2Wrap>
         <Col2>
@@ -90,7 +90,7 @@ const Contact: VFC<Props> = ({
       </Col1>
       <SubmitButton type="submit">SEND</SubmitButton>
     </ContactForm>
-  </SectionWrap>
+  </SectionLastWrap>
 );
 
 export default Contact;
