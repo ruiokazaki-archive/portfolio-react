@@ -1,4 +1,5 @@
-export type Work = {
+export type WorkDataType = {
+  id: number;
   title: string;
   concept: string;
   motivation: string;
@@ -12,8 +13,9 @@ export type Work = {
   logo: string;
 };
 
-export const works: Work[] = [
+export const worksData: WorkDataType[] = [
   {
+    id: 1,
     title: 'InnerPeaceCafe',
     concept:
       'InnerPeaceCafeは女子大生の悩みである肌トラブルを解決するために作られたカフェです。<br>一人一人に寄り添いその人にあったメニューを提供することが出来ます。',
@@ -29,6 +31,7 @@ export const works: Work[] = [
     logo: './svg/logo_IPC.svg',
   },
   {
+    id: 2,
     title: 'nomino',
     concept:
       'nominoは売り手の手間を最小限にした。面倒臭いがないフリマアプリです。<br>買い手がすぐ見つかり従来のフリマアプリとは違いスピーディーな取引が可能です。',
@@ -44,6 +47,7 @@ export const works: Work[] = [
     logo: './svg/logo_nomino.svg',
   },
   {
+    id: 3,
     title: 'たっぴねす',
     concept:
       'たっぴねすはやる気がでない人がやる気を出すためのwebアプリです。<br />目標達成ができない人に達成しないと欲しいものが手に入らないようにすることで普段頑張れない人も頑張ることが出来ます。',
@@ -59,6 +63,7 @@ export const works: Work[] = [
     logo: './svg/logo_tappiness.svg',
   },
   {
+    id: 4,
     title: 'Spark',
     concept:
       'Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。<br>無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。',
@@ -74,6 +79,7 @@ export const works: Work[] = [
     logo: './svg/logo_spark.svg',
   },
   {
+    id: 5,
     title: 'portfolio',
     concept:
       '自分の将来したいことや、今まで作った作品をまとめたwebサイトを作成しました。',
@@ -89,6 +95,7 @@ export const works: Work[] = [
     logo: './svg/logo_portfolio.svg',
   },
   {
+    id: 6,
     title: 'ECC学生アプリ',
     concept:
       '現在apple storeにあるECC学生アプリは学生の間で使いにくいと評判があり、学校側も学生が通知欄を見ないので困っています。<br />そこで、ECC学生アプリを本来の機能とプラスして使いやすい機能を搭載して実装することで学生が使い続けたくなるアプリを作成したいと考えました。',
@@ -104,6 +111,7 @@ export const works: Work[] = [
     logo: './svg/logo_ECC.svg',
   },
   {
+    id: 7,
     title: 'Fribo',
     concept:
       '女性または一人暮らしの方の悩みである、夜道が怖い。を解決するために作られたwebアプリです。',
@@ -119,6 +127,7 @@ export const works: Work[] = [
     logo: './svg/logo_Fribo.svg',
   },
   {
+    id: 8,
     title: 'nonst',
     concept:
       '社会人になってストレスが溜まり、中高の友達とも疎遠になっていて愚痴る相手が居ない。を解決するマッチングアプリです。',
