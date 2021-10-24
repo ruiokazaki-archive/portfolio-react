@@ -1,7 +1,19 @@
 import styled from 'styled-components';
 import tw from 'tailwind-styled-components';
 
-export const BackgroundWrap = tw.div`
+export const BackgroundWrapStyle = styled.div`
+  &:before {
+    content: '';
+    display: block;
+    margin-right: 870px;
+    position: absolute;
+    border-left: 2px solid #f858f1;
+    z-index: 10;
+    height: 100%;
+  }
+`;
+
+export const BackgroundWrap = tw(BackgroundWrapStyle)`
   flex
   items-center
   justify-center
