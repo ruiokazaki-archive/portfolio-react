@@ -17,7 +17,7 @@ const Profile: VFC = () => {
   const emailLabelRef = useRef<HTMLLabelElement>(null);
   const messageLabelRef = useRef<HTMLLabelElement>(null);
 
-  const labelClassChange = (
+  const labelRefClassChange = (
     ref: RefObject<HTMLLabelElement>,
     event: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>,
   ) => {
@@ -28,28 +28,36 @@ const Profile: VFC = () => {
       ref.current.classList.add('labelup');
     }
   };
+  const labelElementClassChange = (
+    el: Element | undefined,
+    event: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    if (el === undefined) return;
+    if (event.target.value === '') {
+      el.classList.remove('labelup');
+    } else {
+      el.classList.add('labelup');
+    }
+  };
 
   const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
-    labelClassChange(nameLabelRef, e);
+    labelRefClassChange(nameLabelRef, e);
   };
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
-    labelClassChange(emailLabelRef, e);
+    labelRefClassChange(emailLabelRef, e);
   };
   const handleMessageChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-    labelClassChange(messageLabelRef, e);
+    labelRefClassChange(messageLabelRef, e);
   };
-  const focusClassChange = (e: FocusEvent<HTMLInputElement>) => {
-    console.log(e.target.parentElement?.children[0].);
-    console.dir(e.target.parentElement?.children[0].);
-
-    // switch (e.target) {
-    //   case value:
-
-    //     break;
-
-    //   default:
-    //     break;
-    // }
+  const focusClassChange = (
+    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    e.target.parentElement?.children[0].classList.add('labelup');
+  };
+  const focusoutClassChange = (
+    e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    labelElementClassChange(e.target.parentElement?.children[0], e);
   };
 
   return (
@@ -66,6 +74,7 @@ const Profile: VFC = () => {
               name="name"
               onChange={handleNameChange}
               onFocus={focusClassChange}
+              onBlur={focusoutClassChange}
             />
             <FocusBorder />
           </Col2>
@@ -79,6 +88,8 @@ const Profile: VFC = () => {
               type="email"
               name="email"
               onChange={handleEmailChange}
+              onFocus={focusClassChange}
+              onBlur={focusoutClassChange}
             />
             <FocusBorder />
           </Col2>
@@ -90,6 +101,8 @@ const Profile: VFC = () => {
           </Label>
           <Textarea
             onChange={handleMessageChange}
+            onFocus={focusClassChange}
+            onBlur={focusoutClassChange}
             name="message"
             id="message"
           />
