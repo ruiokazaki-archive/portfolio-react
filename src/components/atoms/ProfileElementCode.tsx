@@ -1,6 +1,5 @@
 /* eslint-disable react/no-danger */
-import { VFC, useEffect, useRef } from 'react';
-import DOMPurify from 'dompurify';
+import { VFC, useRef, useEffect } from 'react';
 
 import ProfileCodeWrap from './ProfileElementCode.style';
 
@@ -9,21 +8,20 @@ type Props = {
 };
 
 const ProfileElementCode: VFC<Props> = ({ afterCode }) => {
-  const el = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (el.current == null) return;
-    const els = el.current.children;
-
-    for (let i = 0; i < els.length; i += 1) {
-      const element = els[i];
+    if (ref.current == null) return;
+    const refs = ref.current.children;
+    for (let i = 0; i < refs.length; i += 1) {
+      const element = refs[i];
       element.setAttribute('data-value', String(i + 1));
     }
   }, []);
 
   return (
     <ProfileCodeWrap
-      ref={el}
-      dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(afterCode) }}
+      ref={ref}
+      dangerouslySetInnerHTML={{ __html: afterCode }}
     />
   );
 };

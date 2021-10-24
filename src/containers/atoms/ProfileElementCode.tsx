@@ -1,4 +1,5 @@
 import { VFC } from 'react';
+import DOMPurify from 'dompurify';
 
 import { ProfileCode } from '../../data/ProfileSkillCode';
 import ProfileElementCode from '../../components/atoms/ProfileElementCode';
@@ -81,6 +82,8 @@ const EnhancedProfileElementCode: VFC<Props> = ({ profileData }) => {
       /\(|\)|\[|\]|\u3000=|\{|\}/g,
       `<span class='code-brackets'>$&</span>`,
     );
+
+    afterCode = DOMPurify.sanitize(afterCode);
 
     return afterCode;
   };
