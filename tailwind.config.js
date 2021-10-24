@@ -15,6 +15,7 @@ module.exports = {
       pink1: '#f858f1',
       gray1: '#988e9f',
       red1: '#ff6480',
+      green1: '#0bffd4',
     },
     extend: {},
   },

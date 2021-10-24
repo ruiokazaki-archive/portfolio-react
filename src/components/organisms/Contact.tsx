@@ -10,6 +10,7 @@ import {
   Textarea,
   FocusBorder,
   Label,
+  SubmitButton,
 } from './Contact.style';
 
 type Props = {
@@ -87,6 +88,7 @@ const Contact: VFC<Props> = ({
         />
         <FocusBorder />
       </Col1>
+      <SubmitButton type="submit">SEND</SubmitButton>
     </ContactForm>
   </SectionWrap>
 );

@@ -64,3 +64,18 @@ const Col2Style = styled.div`
   }
 `;
 export const Col2 = tw(Col2Style)`relative`;
+
+const SubmitButtonStyle = styled.button`
+  height: 62px;
+  width: 180px;
+  font-size: 22px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin: 0 auto;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const SubmitButton = tw(SubmitButtonStyle)`bg-green1 text-white1 block`;
