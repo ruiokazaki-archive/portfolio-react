@@ -7,6 +7,10 @@ const SectionLastWrapStyle = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  & > div {
+    height: 40vh;
+  }
 `;
+
 const SectionLastWrap = tw(SectionLastWrapStyle)`relative background`;
 export default SectionLastWrap;

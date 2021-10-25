@@ -1,8 +1,7 @@
 import { VFC, ReactNode } from 'react';
 import SectionFirstWrap from './SectionFirstWrap.style';
+import SectionFirstTitle from '../atoms/SectionFirstTitle';
 import ContentWrap from './ContentWrap';
-import SectionBackground from '../../containers/molecules/SectionBackground';
-import SectionTitle from '../atoms/SectionTitle';
 
 type Props = {
   sectionTitle: string;
@@ -11,9 +10,8 @@ type Props = {
 
 const Section: VFC<Props> = ({ sectionTitle, children }) => (
   <SectionFirstWrap>
-    <SectionBackground sectionTitle={sectionTitle} />
     <ContentWrap>
-      <SectionTitle sectionTitle={sectionTitle} />
+      <SectionFirstTitle sectionTitle={sectionTitle} />
       {children}
     </ContentWrap>
   </SectionFirstWrap>
