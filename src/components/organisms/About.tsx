@@ -21,11 +21,25 @@ const About: VFC = () => (
   <SectionWrap sectionTitle="About">
     <div className="flex items-center justify-between">
       <LeftContents>
-        <ProfileName>RUI OKAZAKI</ProfileName>
-        <ProfileSchool>
+        <ProfileName
+          startDelay={2500}
+          avgTypingDelay={30}
+          cursor={{ show: false }}
+        >
+          RUI OKAZAKI
+        </ProfileName>
+        <ProfileSchool
+          startDelay={1000}
+          avgTypingDelay={30}
+          cursor={{ show: false }}
+        >
           ECCコンピュータ専門学校 WEBデザイナー専攻2年
         </ProfileSchool>
-        <ProfileIntroduction>
+        <ProfileIntroduction
+          startDelay={3500}
+          avgTypingDelay={30}
+          cursor={{ show: false }}
+        >
           私は人を笑顔にする事と教える事が好きです。
           <br />
           専門学校に入り友人にプログラミングを教えたことがあります。

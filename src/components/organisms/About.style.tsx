@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind-styled-components';
+import Typist from 'react-typist';
 
 const LeftContentsStyle = styled.section`
   width: 487px;
@@ -7,7 +8,7 @@ const LeftContentsStyle = styled.section`
 `;
 export const LeftContents = tw(LeftContentsStyle)`flex flex-col`;
 
-const ProfileNameStyle = styled.h3`
+const ProfileNameStyle = styled(Typist)`
   line-height: 49px;
   letter-spacing: 10px;
   font-size: 42px;
@@ -15,12 +16,13 @@ const ProfileNameStyle = styled.h3`
   margin-bottom: 10px;
 `;
 export const ProfileName = tw(ProfileNameStyle)`font-bold order-2`;
-const ProfileSchoolStyle = styled.p`
+
+const ProfileSchoolStyle = styled(Typist)`
   font-size: 14px;
 `;
 export const ProfileSchool = tw(ProfileSchoolStyle)`text-gray1 order-1`;
 
-const ProfileIntroductionStyle = styled.p`
+const ProfileIntroductionStyle = styled(Typist)`
   font-size: 14px;
   line-height: 28px;
 `;
