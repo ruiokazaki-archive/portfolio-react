@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   VANTA.BIRDS({
-    el: '#firstview',
+    el: '#Start',
     mouseControls: true,
     touchControls: true,
     gyroControls: true,

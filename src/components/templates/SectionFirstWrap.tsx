@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Section: VFC<Props> = ({ sectionTitle, children }) => (
-  <SectionFirstWrap>
+  <SectionFirstWrap id={sectionTitle}>
     <ContentWrap>
       <SectionFirstTitle sectionTitle={sectionTitle} />
       {children}
