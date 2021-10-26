@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import tw from 'tailwind-styled-components';
 
-const ProfileCodeWrap = styled.div`
+const ProfileCodeWrapStyle = styled.div`
   font-size: 16px;
   line-height: 24px;
   .codeWrap {
@@ -59,5 +60,6 @@ const ProfileCodeWrap = styled.div`
     color: #ce9887;
   }
 `;
+const ProfileCodeWrap = tw(ProfileCodeWrapStyle)`font-mono`;
 
 export default ProfileCodeWrap;

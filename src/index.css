@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Roboto Condensed', sans-serif;
   cursor: none;
 }
 
 html {
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 62.5%;
   color: thema('colors.white1');
   background-color: theme('colors.black1');
