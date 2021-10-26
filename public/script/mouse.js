@@ -5,10 +5,10 @@ class Cursor {
       <div class="pointer"></div>
       <div class="stoker"></div>
     </div>`;
-    document.body.insertAdjacentHTML("beforeend", el);
-    this.wrap_el = document.querySelector(".cursor");
-    this.pointer_el = document.querySelector(".pointer");
-    this.stoker_el = document.querySelector(".stoker");
+    document.body.insertAdjacentHTML('beforeend', el);
+    this.wrap_el = document.querySelector('.cursor');
+    this.pointer_el = document.querySelector('.pointer');
+    this.stoker_el = document.querySelector('.stoker');
 
     this.position = {
       mouseX: 0,
@@ -29,100 +29,100 @@ class Cursor {
   }
   attachEvent() {
     // マウスが動いた時
-    document.addEventListener("mousemove", (e) => {
+    document.addEventListener('mousemove', (e) => {
       this.position.mouseX = e.clientX;
       this.position.mouseY = e.clientY;
-      this.wrap_el.classList.add("is-move");
+      this.wrap_el.classList.add('is-move');
     });
 
     // マウスが画面外に行った時
-    document.body.addEventListener("mouseleave", () => {
-      this.wrap_el.classList.add("is-outside");
+    document.body.addEventListener('mouseleave', () => {
+      this.wrap_el.classList.add('is-outside');
     });
-    document.body.addEventListener("mouseenter", () => {
-      this.wrap_el.classList.remove("is-outside");
+    document.body.addEventListener('mouseenter', () => {
+      this.wrap_el.classList.remove('is-outside');
     });
 
     // クリックした時
-    document.addEventListener("mousedown", (e) => {
+    document.addEventListener('mousedown', (e) => {
       this.eventStatus.click = true;
     });
-    document.addEventListener("mouseup", (e) => {
+    document.addEventListener('mouseup', (e) => {
       this.eventStatus.click = false;
     });
 
     // observer作成
     const observer = new MutationObserver(() => {
       // 全てのaタグにイベントを付けている
-      let link = document.querySelectorAll("a");
+      let link = document.querySelectorAll('a');
       for (const target of link) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
       // button
-      let btns = document.querySelectorAll("button");
+      let btns = document.querySelectorAll('button');
       for (const target of btns) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
       // list
-      let li = document.querySelectorAll("li");
+      let li = document.querySelectorAll('li');
       for (const target of li) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
       // work
-      let works = document.querySelectorAll(".work > div");
+      let works = document.querySelectorAll('.work');
       for (const target of works) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
       // input
-      let input = document.querySelectorAll("input");
+      let input = document.querySelectorAll('input');
       for (const target of input) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
       // textarea
-      let textarea = document.querySelectorAll("textarea");
+      let textarea = document.querySelectorAll('textarea');
       for (const target of textarea) {
-        target.addEventListener("mouseenter", () => {
+        target.addEventListener('mouseenter', () => {
           this.eventStatus.hover = true;
-          this.wrap_el.classList.add("is-hover");
+          this.wrap_el.classList.add('is-hover');
         });
-        target.addEventListener("mouseleave", () => {
+        target.addEventListener('mouseleave', () => {
           this.eventStatus.hover = false;
-          this.wrap_el.classList.remove("is-hover");
+          this.wrap_el.classList.remove('is-hover');
         });
       }
     });
