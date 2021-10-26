@@ -6,6 +6,7 @@ import About from '../organisms/About';
 import Profile from '../../containers/organisms/Profile';
 import Works from '../organisms/Works';
 import Contact from '../../containers/organisms/Contact';
+import Footer from '../organisms/Footer';
 
 const Home: VFC = () => (
   <>
@@ -15,6 +16,7 @@ const Home: VFC = () => (
     <Profile />
     <Works />
     <Contact />
+    <Footer />
   </>
 );
 
