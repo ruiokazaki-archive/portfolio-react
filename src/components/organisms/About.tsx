@@ -15,7 +15,7 @@ import {
 // images
 import myself from '../../assets/images/myself.jpg';
 import github from '../../assets/svg/github.svg';
-import instagram from '../../assets/svg/instagram.svg';
+import twitter from '../../assets/svg/twitter.svg';
 
 const About: VFC = () => (
   <SectionWrap sectionTitle="About">
@@ -64,15 +64,15 @@ const About: VFC = () => (
         <LinkWrap>
           <Link href="https://github.com/OkazakiRui" target="ruru">
             <LinkIcon>
-              <img src={github} alt="github" />
+              <img src={github} alt="岡崎流依のgithub" />
             </LinkIcon>
             OkazakiRui
           </Link>
-          <Link href="https://www.instagram.com/asahanemutaiyo/" target="ruru">
+          <Link href="https://twitter.com/yoruhanemutaiyo" target="ruru">
             <LinkIcon>
-              <img src={instagram} alt="instagram" />
+              <img src={twitter} alt="岡崎流依のinstagram" />
             </LinkIcon>
-            asahanemutaiyo
+            yoruhanemutaiyo
           </Link>
         </LinkWrap>
       </RightContents>

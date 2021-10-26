@@ -56,5 +56,7 @@ export const Link = tw(LinkStyle)`flex items-center text-pink1 shadow`;
 
 const LinkIconStyle = styled.figure`
   margin-right: 5px;
+  width: 22px;
+  height: 22px;
 `;
 export const LinkIcon = tw(LinkIconStyle)`flex items-center justify-center`;
