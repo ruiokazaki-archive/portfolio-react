@@ -4,31 +4,39 @@
 
 * {
   font-family: 'Roboto Condensed', sans-serif;
+
   /* font-family: 'Roboto Mono', monospace, sans-serif; */
+
   /* cursor: none; */
 }
+
 html {
   font-size: 62.5%;
-  background-color: theme('colors.black1');
   color: thema('colors.white1');
+  background-color: theme('colors.black1');
 }
+
 header,
 main,
 footer {
   min-width: 960px;
   margin: 0 auto;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 input,
 textarea {
   -webkit-appearance: none;
 }
+
 input,
 button,
 textarea,
@@ -50,15 +58,17 @@ label.labelup {
 
 /* background styles */
 #root > div.background:nth-of-type(odd) {
-  background-color: theme('colors.black1');
   color: theme('colors.black2');
+  background-color: theme('colors.black1');
 }
+
 #root > div.background:nth-of-type(even) {
-  background-color: theme('colors.black2');
   color: theme('colors.black1');
+  background-color: theme('colors.black2');
 }
+
 .shadow {
-  filter: drop-shadow(0px 0px 4px #000000);
+  filter: drop-shadow(0 0 4px #000);
 }
 
 figure,
