@@ -1,7 +1,7 @@
 /* eslint-disable no-irregular-whitespace */
 import { VFC } from 'react';
 
-import { ProfileCode } from '../../data/ProfileSkillCode';
+import { ProfileCode } from '../../data/profileSkillCode';
 import SectionWrap from '../templates/SectionWrap';
 import ProfileElementCode from '../../containers/atoms/ProfileElementCode';
 

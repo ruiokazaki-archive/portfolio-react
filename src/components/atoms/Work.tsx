@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 import { Tilt, LogoWrap } from './Work.style';
-import { WorkDataType } from '../../data/Works';
+import { WorkDataType } from '../../data/works';
 
 type Props = {
   workData: WorkDataType;
