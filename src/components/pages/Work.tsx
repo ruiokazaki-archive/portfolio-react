@@ -2,7 +2,13 @@ import { VFC } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { worksData } from '../../data/works';
 
+import { SubmitButton } from '../organisms/Contact.style';
+
 import Header from '../organisms/Header';
+import SectionTitle from '../atoms/SectionTitle';
+
+import githubIcon from '../../assets/svg/github.svg';
+import linkIcon from '../../assets/svg/link.svg';
 
 const Work: VFC = () => {
   const { workId } = useParams();
@@ -11,7 +17,69 @@ const Work: VFC = () => {
   worksData.forEach((work) => worksId.push(work.id));
 
   if (worksId.includes(Number(workId))) {
-    // const { title, concept } = worksData[Number(workId) - 1];
+    const {
+      title,
+      description,
+      position,
+      impressions,
+      programmingLanguages,
+      toolsUsed,
+      teamProduction,
+      usetime,
+      season,
+      img,
+      githubLink,
+      productionLink,
+    } = worksData[Number(workId) - 1];
+
+    const toHome = () => {
+      // const History = useHistory();
+    };
+
+    const githubLinks = githubLink.map((github) => (
+      <p>
+        <a
+          href={github.url}
+          target="ruru"
+          className="flex items-center text-pink1"
+          style={{ marginBottom: '16px', fontSize: '16px' }}
+        >
+          <img
+            style={{
+              width: '20px',
+              height: '20px',
+              display: 'block',
+              marginRight: '8px',
+            }}
+            src={githubIcon}
+            alt="githubのアイコン"
+          />
+          {github.name} - {github.url}
+        </a>
+      </p>
+    ));
+    const productionLinks = productionLink.map((production) => (
+      <p>
+        <a
+          href={production.url}
+          target="ruru"
+          className="flex items-center text-green1"
+          style={{ marginBottom: '16px', fontSize: '16px' }}
+        >
+          <img
+            style={{
+              width: '20px',
+              height: '20px',
+              display: 'block',
+              marginRight: '8px',
+            }}
+            src={linkIcon}
+            alt="linkのアイコン"
+          />
+          {production.name} - {production.url}
+        </a>
+      </p>
+    ));
 
     return (
       <>
@@ -23,8 +91,183 @@ const Work: VFC = () => {
           }}
           className="text-white1 flex"
         >
-          <div className="w-6/12">左</div>
-          <div className="w-6/12">右</div>
+          {/* 左側 */}
+          <div
+            className="relative"
+            style={{ minWidth: '500px', width: '50%', padding: '32px' }}
+          >
+            <div
+              className="absolute"
+              style={{
+                height: 'calc(100% + 64px)',
+                background: '#f858f1',
+                width: '2px',
+                top: '-64px',
+                left: '8px',
+              }}
+            />
+            <SectionTitle sectionTitle="Work" />
+            <h3
+              style={{
+                marginBottom: '32px',
+                fontSize: '48px',
+                lineHeight: '56px',
+              }}
+            >
+              {title}
+            </h3>
+            <SectionTitle sectionTitle="Description" />
+            <p
+              style={{
+                marginBottom: '32px',
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+            >
+              {description}
+            </p>
+            <SectionTitle sectionTitle="Position" />
+            <p
+              style={{
+                marginBottom: '32px',
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+            >
+              {position}
+            </p>
+            <SectionTitle sectionTitle="Impressions" />
+            <p
+              style={{
+                marginBottom: '32px',
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+            >
+              {impressions}
+            </p>
+            <SectionTitle sectionTitle="ProgrammingLanguages" />
+            <p
+              style={{
+                marginBottom: '32px',
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+            >
+              {programmingLanguages}
+            </p>
+            <SectionTitle sectionTitle="ToolsUsed" />
+            <p
+              style={{
+                marginBottom: '32px',
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+            >
+              {toolsUsed}
+            </p>
+            <SubmitButton
+              type="button"
+              style={{ marginTop: '80px' }}
+              onClick={toHome}
+            >
+              HOME
+            </SubmitButton>
+          </div>
+          {/* 右側 */}
+          <div
+            className="fixed h-full right-0 top-0"
+            style={{
+              minWidth: '500px',
+              width: '50%',
+              padding: '96px 0 32px 16px',
+              height: '100%',
+              overflow: 'scroll',
+            }}
+          >
+            <div
+              className="flex align-center"
+              style={{ gap: '16px', marginBottom: '32px' }}
+            >
+              {/* ここから */}
+              <div
+                className="flex justify-center items-center"
+                style={{
+                  border: '1px solid #F858F1',
+                  borderRadius: '8px',
+                  width: '67px',
+                  height: '67px',
+                  fontSize: '14px',
+                  lineHeight: '18px',
+                }}
+              >
+                <p
+                  className="text-center"
+                  style={{ height: 'fit-content', width: '59px' }}
+                >
+                  {usetime}時間
+                </p>
+              </div>
+              {/* ここまで */}
+              {/* ここから */}
+              <div
+                className="flex justify-center items-center"
+                style={{
+                  border: '1px solid #F858F1',
+                  borderRadius: '8px',
+                  width: '67px',
+                  height: '67px',
+                  fontSize: '14px',
+                  lineHeight: '18px',
+                }}
+              >
+                <p
+                  className="text-center"
+                  style={{ height: 'fit-content', width: '59px' }}
+                >
+                  {teamProduction === 0 ? '個人制作' : 'グループ制作'}
+                </p>
+              </div>
+              {/* ここまで */}
+              {/* ここから */}
+              <div
+                className="flex justify-center items-center"
+                style={{
+                  border: '1px solid #F858F1',
+                  borderRadius: '8px',
+                  width: '67px',
+                  height: '67px',
+                  fontSize: '14px',
+                  lineHeight: '18px',
+                }}
+              >
+                <p
+                  className="text-center"
+                  style={{ height: 'fit-content', width: '59px' }}
+                >
+                  {season}
+                </p>
+              </div>
+              {/* ここまで */}
+            </div>
+            <figure>
+              <img
+                src={img}
+                alt={title}
+                style={{
+                  aspectRatio: '16 / 9',
+                  objectFit: 'cover',
+                  width: '100%',
+                  display: 'block',
+                }}
+              />
+            </figure>
+
+            <div style={{ marginTop: '32px' }}>
+              {githubLinks}
+              {productionLinks}
+            </div>
+          </div>
         </div>
       </>
     );
