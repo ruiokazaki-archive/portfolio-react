@@ -15,6 +15,11 @@ import ECCImg from '../assets/images/ECC-LP_screen.jpg';
 import FriboImg from '../assets/images/Fribo_screen.jpg';
 import nonstImg from '../assets/images/nonst_screen.jpg';
 
+type linkType = {
+  name: string;
+  url: string;
+};
+
 export type WorkDataType = {
   id: number;
   title: string;
@@ -26,8 +31,8 @@ export type WorkDataType = {
   teamProduction: 0 | 1;
   usetime: number;
   season: string;
-  githubLink: string;
-  productionLink: string;
+  githubLink: linkType[];
+  productionLink: linkType[];
   img: string;
   logo: string;
 };
@@ -45,9 +50,18 @@ export const worksData: WorkDataType[] = [
     season: '1年前期',
     programmingLanguages: 'Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript',
     toolsUsed: 'Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript',
-    githubLink: 'https://github.com/OkazakiRui/InnerPeaceCafe',
-    productionLink:
-      'https://click.ecc.ac.jp/ecc/rokazaki/works/InnerPeaceCafe/',
+    githubLink: [
+      {
+        name: 'LP',
+        url: 'https://github.com/OkazakiRui/InnerPeaceCafe',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'LP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/InnerPeaceCafe/',
+      },
+    ],
     img: InnerPeaceCafeImg,
     logo: InnerPeaceCafe,
   },
@@ -65,8 +79,18 @@ export const worksData: WorkDataType[] = [
     programmingLanguages:
       'Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs',
     toolsUsed: 'Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs',
-    githubLink: 'https://github.com/OkazakiRui/nomino',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nomino/',
+    githubLink: [
+      {
+        name: 'APP',
+        url: 'https://github.com/OkazakiRui/nomino',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'APP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nomino/',
+      },
+    ],
     img: nominoImg,
     logo: nomino,
   },
@@ -83,8 +107,18 @@ export const worksData: WorkDataType[] = [
     season: '1年後期',
     programmingLanguages: 'HTML5, CSS3, Sass, javaScript, Vuejs',
     toolsUsed: 'HTML5, CSS3, Sass, javaScript, Vuejs',
-    githubLink: 'https://github.com/OkazakiRui/tappiness',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/tappiness/',
+    githubLink: [
+      {
+        name: 'APP',
+        url: 'https://github.com/OkazakiRui/tappiness',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'APP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/tappiness/',
+      },
+    ],
     img: tappinessImg,
     logo: tappiness,
   },
@@ -99,10 +133,20 @@ export const worksData: WorkDataType[] = [
     position: 'Planning, FrontEnd',
     usetime: 30,
     season: '1年後期',
-    programmingLanguages: 'Pug, SCSS, JavaScript, gulp',
-    toolsUsed: 'Pug, SCSS, JavaScript, gulp',
-    githubLink: 'https://github.com/OkazakiRui/spark',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/spark/',
+    programmingLanguages: 'Pug, SCSS, JavaScript, gu"lp"',
+    toolsUsed: 'Pug, SCSS, JavaScript, gu"lp"',
+    githubLink: [
+      {
+        name: 'WebAPP',
+        url: 'https://github.com/OkazakiRui/spark',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'WebAPP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/spark/',
+      },
+    ],
     img: SparkImg,
     logo: Spark,
   },
@@ -119,8 +163,18 @@ export const worksData: WorkDataType[] = [
     season: '1年後期',
     programmingLanguages: 'Vuejs',
     toolsUsed: 'Vuejs',
-    githubLink: 'https://github.com/OkazakiRui/portfolio_v1',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/',
+    githubLink: [
+      {
+        name: 'Web',
+        url: 'https://github.com/OkazakiRui/portfolio_v1',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'Web',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/',
+      },
+    ],
     img: portfolioImg,
     logo: portfolio,
   },
@@ -137,8 +191,18 @@ export const worksData: WorkDataType[] = [
     season: '2年前期',
     programmingLanguages: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
     toolsUsed: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
-    githubLink: 'https://github.com/OkazakiRui/spark',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/ECCApp-LP/',
+    githubLink: [
+      {
+        name: 'LP',
+        url: 'https://github.com/OkazakiRui/ECCApp-LP',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'LP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/ECCApp-LP/',
+      },
+    ],
     img: ECCImg,
     logo: ECC,
   },
@@ -155,8 +219,18 @@ export const worksData: WorkDataType[] = [
     season: '2年前期',
     programmingLanguages: 'Vuejs, Firebase',
     toolsUsed: 'Vuejs, Firebase',
-    githubLink: 'https://github.com/OkazakiRui/Fribo',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/fribo/',
+    githubLink: [
+      {
+        name: 'APP',
+        url: 'https://github.com/OkazakiRui/Fribo',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'APP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/fribo/',
+      },
+    ],
     img: FriboImg,
     logo: Fribo,
   },
@@ -173,8 +247,26 @@ export const worksData: WorkDataType[] = [
     season: '2年前期',
     programmingLanguages: 'Vuejs, Firebase',
     toolsUsed: 'Vuejs, Firebase',
-    githubLink: 'https://github.com/OkazakiRui/nonst',
-    productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-app/',
+    githubLink: [
+      {
+        name: 'APP',
+        url: 'https://github.com/OkazakiRui/nonst',
+      },
+      {
+        name: 'LP',
+        url: 'https://github.com/OkazakiRui/nonst-LP',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'APP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-app/',
+      },
+      {
+        name: 'LP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-LP/',
+      },
+    ],
     img: nonstImg,
     logo: nonst,
   },
