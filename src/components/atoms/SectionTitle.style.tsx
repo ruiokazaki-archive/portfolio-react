@@ -3,7 +3,7 @@ import tw from 'tailwind-styled-components';
 
 const SectionTitleStyle = styled.h2`
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   &:before {
     content: '';
     display: block;
