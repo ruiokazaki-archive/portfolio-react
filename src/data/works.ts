@@ -6,16 +6,26 @@ import portfolio from '../assets/svg/logo_portfolio.svg';
 import ECC from '../assets/svg/logo_ECC.svg';
 import Fribo from '../assets/svg/logo_Fribo.svg';
 import nonst from '../assets/svg/logo_nonst.svg';
+import InnerPeaceCafeImg from '../assets/images/IPC_screen.jpg';
+import nominoImg from '../assets/images/nomino_screen.jpg';
+import tappinessImg from '../assets/images/tappiness_screen.jpg';
+import SparkImg from '../assets/images/spark_screen.jpg';
+import portfolioImg from '../assets/images/portfolio_screen.jpg';
+import ECCImg from '../assets/images/ECC-LP_screen.jpg';
+import FriboImg from '../assets/images/Fribo_screen.jpg';
+import nonstImg from '../assets/images/nonst_screen.jpg';
 
 export type WorkDataType = {
   id: number;
   title: string;
-  concept: string;
-  motivation: string;
-  teamProduction: number;
+  description: string;
+  impressions: string;
   position: string;
+  programmingLanguages: string;
+  toolsUsed: string;
+  teamProduction: 0 | 1;
   usetime: number;
-  tool: string;
+  season: string;
   githubLink: string;
   productionLink: string;
   img: string;
@@ -26,129 +36,146 @@ export const worksData: WorkDataType[] = [
   {
     id: 1,
     title: 'InnerPeaceCafe',
-    concept:
-      'InnerPeaceCafeは女子大生の悩みである肌トラブルを解決するために作られたカフェです。<br>一人一人に寄り添いその人にあったメニューを提供することが出来ます。',
-    motivation: 'HTML, CSSを勉強し、初めて作成したwebサイトです。',
+    description:
+      'InnerPeaceCafeは女子大生の悩みである肌トラブルを解決するために作られたカフェです。一人一人に寄り添いその人にあったメニューを提供することが出来ます。',
+    impressions: 'HTML, CSSを勉強し、初めて作成したwebサイトです。',
     teamProduction: 0,
     position: 'Planning, Design, FrontEnd',
     usetime: 60,
-    tool: 'Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript',
+    season: '1年前期',
+    programmingLanguages: 'Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript',
+    toolsUsed: 'Photoshop, Illustrator, XD, HTML5, SCSS, JavaScript',
     githubLink: 'https://github.com/OkazakiRui/InnerPeaceCafe',
     productionLink:
       'https://click.ecc.ac.jp/ecc/rokazaki/works/InnerPeaceCafe/',
-    img: 'InnerPeaceCafe',
+    img: InnerPeaceCafeImg,
     logo: InnerPeaceCafe,
   },
   {
     id: 2,
     title: 'nomino',
-    concept:
-      'nominoは売り手の手間を最小限にした。面倒臭いがないフリマアプリです。<br>買い手がすぐ見つかり従来のフリマアプリとは違いスピーディーな取引が可能です。',
-    motivation:
+    description:
+      'nominoは売り手の手間を最小限にした。面倒臭いがないフリマアプリです。買い手がすぐ見つかり従来のフリマアプリとは違いスピーディーな取引が可能です。',
+    impressions:
       'vuejsの勉強のために作成した初めてのスマートフォン向けwebアプリケーションです。',
     teamProduction: 0,
     position: 'Planning, Design, FrontEnd',
     usetime: 16,
-    tool: 'Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs',
+    season: '1年後期',
+    programmingLanguages:
+      'Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs',
+    toolsUsed: 'Photoshop, Illustrator, Figma, HTML5, SCSS, JavaScript, Vuejs',
     githubLink: 'https://github.com/OkazakiRui/nomino',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nomino/',
-    img: './images/nomino_screen.jpg',
+    img: nominoImg,
     logo: nomino,
   },
   {
     id: 3,
     title: 'たっぴねす',
-    concept:
+    description:
       'たっぴねすはやる気がでない人がやる気を出すためのwebアプリです。<br />目標達成ができない人に達成しないと欲しいものが手に入らないようにすることで普段頑張れない人も頑張ることが出来ます。',
-    motivation:
+    impressions:
       '初めてのチーム制作でした。チームで動くことの難しさを身をもって体験しました。',
     teamProduction: 1,
     position: 'Planning, FrontEnd',
     usetime: 30,
-    tool: 'HTML5, CSS3, Sass, javaScript, Vuejs',
+    season: '1年後期',
+    programmingLanguages: 'HTML5, CSS3, Sass, javaScript, Vuejs',
+    toolsUsed: 'HTML5, CSS3, Sass, javaScript, Vuejs',
     githubLink: 'https://github.com/OkazakiRui/tappiness',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/tappiness/',
-    img: './images/tappiness_screen.jpg',
+    img: tappinessImg,
     logo: tappiness,
   },
   {
     id: 4,
     title: 'Spark',
-    concept:
-      'Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。<br>無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。',
-    motivation:
+    description:
+      'Sparkはビジネスではなく、オンライン呑み会などカジュアルにビデオ通話をするための新しいツールです。無言が続くと画面にエフェクトが起こったり、豊富なスタンプが特徴的です。',
+    impressions:
       'Yahoo!さん主催のハッカソン、OpenHackU2020 Volume3で作成し、優秀賞を頂きました。',
     teamProduction: 1,
     position: 'Planning, FrontEnd',
     usetime: 30,
-    tool: 'Pug, SCSS, JavaScript, gulp',
+    season: '1年後期',
+    programmingLanguages: 'Pug, SCSS, JavaScript, gulp',
+    toolsUsed: 'Pug, SCSS, JavaScript, gulp',
     githubLink: 'https://github.com/OkazakiRui/spark',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/spark/',
-    img: './images/spark_screen.jpg',
+    img: SparkImg,
     logo: Spark,
   },
   {
     id: 5,
     title: 'portfolio',
-    concept:
+    description:
       '自分の将来したいことや、今まで作った作品をまとめたwebサイトを作成しました。',
-    motivation:
+    impressions:
       '黒とピンクが好きなので、黒とピンクを基調にしたデザインに仕上げました。<br />現在 vuejs から react + typescript へ移行中です。',
     teamProduction: 0,
     position: 'Planning, Design, FrontEnd',
     usetime: 70,
-    tool: 'Vuejs',
+    season: '1年後期',
+    programmingLanguages: 'Vuejs',
+    toolsUsed: 'Vuejs',
     githubLink: 'https://github.com/OkazakiRui/portfolio_v1',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/',
-    img: './images/portfolio_screen.jpg',
+    img: portfolioImg,
     logo: portfolio,
   },
   {
     id: 6,
     title: 'ECC学生アプリ',
-    concept:
+    description:
       '現在apple storeにあるECC学生アプリは学生の間で使いにくいと評判があり、学校側も学生が通知欄を見ないので困っています。<br />そこで、ECC学生アプリを本来の機能とプラスして使いやすい機能を搭載して実装することで学生が使い続けたくなるアプリを作成したいと考えました。',
-    motivation:
+    impressions:
       'apiの作り方やスクレイピングについて学ぶことが出来ました。<br />現在アプリは開発中です。後期公開予定',
     teamProduction: 1,
     position: 'Planning, FrontEnd',
     usetime: 20,
-    tool: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
+    season: '2年前期',
+    programmingLanguages: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
+    toolsUsed: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
     githubLink: 'https://github.com/OkazakiRui/spark',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/ECCApp-LP/',
-    img: './images/ECC-LP_screen.jpg',
+    img: ECCImg,
     logo: ECC,
   },
   {
     id: 7,
     title: 'Fribo',
-    concept:
+    description:
       '女性または一人暮らしの方の悩みである、夜道が怖い。を解決するために作られたwebアプリです。',
-    motivation:
+    impressions:
       'firebaseを初めて使い、PWAにも初めてしたので、初めてづくしでとても勉強になった',
     teamProduction: 1,
     position: 'Planning, FrontEnd, BackEnd',
     usetime: 40,
-    tool: 'Vuejs, Firebase',
+    season: '2年前期',
+    programmingLanguages: 'Vuejs, Firebase',
+    toolsUsed: 'Vuejs, Firebase',
     githubLink: 'https://github.com/OkazakiRui/Fribo',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/fribo/',
-    img: './images/Fribo_screen.jpg',
+    img: FriboImg,
     logo: Fribo,
   },
   {
     id: 8,
     title: 'nonst',
-    concept:
+    description:
       '社会人になってストレスが溜まり、中高の友達とも疎遠になっていて愚痴る相手が居ない。を解決するマッチングアプリです。',
-    motivation:
+    impressions:
       '10日間のチーム制作でどれだけのものが作れるかを知る良い機会だった。<br />ファイル構造を意識したり、トークンの自動延長などを初めてしてとても良い勉強になった。',
     teamProduction: 1,
     position: 'Planning, FrontEnd, BackEnd',
     usetime: 30,
-    tool: 'Vuejs, Firebase',
+    season: '2年前期',
+    programmingLanguages: 'Vuejs, Firebase',
+    toolsUsed: 'Vuejs, Firebase',
     githubLink: 'https://github.com/OkazakiRui/nonst',
     productionLink: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-app/',
-    img: './images/nonst_screen.jpg',
+    img: nonstImg,
     logo: nonst,
   },
 ];
