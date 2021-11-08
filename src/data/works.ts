@@ -4,6 +4,7 @@ import tappiness from '../assets/svg/logo_tappiness.svg';
 import Spark from '../assets/svg/logo_spark.svg';
 import portfolio from '../assets/svg/logo_portfolio.svg';
 import ECC from '../assets/svg/logo_ECC.svg';
+import jakunensha from '../assets/svg/logo_monodukuri.svg';
 import Fribo from '../assets/svg/logo_Fribo.svg';
 import nonst from '../assets/svg/logo_nonst.svg';
 import InnerPeaceCafeImg from '../assets/images/IPC_screen.jpg';
@@ -11,7 +12,8 @@ import nominoImg from '../assets/images/nomino_screen.jpg';
 import tappinessImg from '../assets/images/tappiness_screen.jpg';
 import SparkImg from '../assets/images/spark_screen.jpg';
 import portfolioImg from '../assets/images/portfolio_screen.jpg';
-import ECCImg from '../assets/images/ECC-LP_screen.jpg';
+import ECCImg from '../assets/images/ECC_screen.jpg';
+import jakunenshaImg from '../assets/images/jakunen_screen.jpg';
 import FriboImg from '../assets/images/Fribo_screen.jpg';
 import nonstImg from '../assets/images/nonst_screen.jpg';
 
@@ -105,8 +107,8 @@ export const worksData: WorkDataType[] = [
     position: 'Planning, FrontEnd',
     usetime: 30,
     season: '1年後期',
-    programmingLanguages: 'HTML5, CSS3, Sass, javaScript, Vuejs',
-    toolsUsed: 'HTML5, CSS3, Sass, javaScript, Vuejs',
+    programmingLanguages: 'HTML5, CSS3, Sass, JavaScript, Vuejs',
+    toolsUsed: 'HTML5, CSS3, Sass, JavaScript, Vuejs',
     githubLink: [
       {
         name: 'APP',
@@ -133,8 +135,8 @@ export const worksData: WorkDataType[] = [
     position: 'Planning, FrontEnd',
     usetime: 30,
     season: '1年後期',
-    programmingLanguages: 'Pug, SCSS, JavaScript, gu"lp"',
-    toolsUsed: 'Pug, SCSS, JavaScript, gu"lp"',
+    programmingLanguages: 'Pug, SCSS, JavaScript, gulp',
+    toolsUsed: 'Pug, SCSS, JavaScript, gulp',
     githubLink: [
       {
         name: 'WebAPP',
@@ -152,7 +154,7 @@ export const worksData: WorkDataType[] = [
   },
   {
     id: 5,
-    title: 'portfolio',
+    title: 'portfolio Vuejs',
     description:
       '自分の将来したいことや、今まで作った作品をまとめたwebサイトを作成しました。',
     impressions:
@@ -161,8 +163,8 @@ export const worksData: WorkDataType[] = [
     position: 'Planning, Design, FrontEnd',
     usetime: 70,
     season: '1年後期',
-    programmingLanguages: 'Vuejs',
-    toolsUsed: 'Vuejs',
+    programmingLanguages: 'Vuejs, GoogleAppsScript',
+    toolsUsed: 'Figma, Illustrator, Photoshop',
     githubLink: [
       {
         name: 'Web',
@@ -208,6 +210,35 @@ export const worksData: WorkDataType[] = [
   },
   {
     id: 7,
+    title: 'CinemaTangerine',
+    description:
+      '若年者ものづくり競技大会にて銀賞をいただきました。<br />お題とapiが与えられ時間内に解決方法を考え、解決に沿ったデザイン、コーディング、プレゼン資料作成を計5時間で行う旨の大会でした。',
+    impressions:
+      '5時間という短い時間内に企画、デザイン、レスポンシブ対応、api通信、フィルター機能、プレゼンテーションの資料を作成することができ、満足のいく結果に終わったと思う！',
+    teamProduction: 1,
+    position: 'Planning, Design, FrontEnd',
+    usetime: 5,
+    season: '8月5日',
+    programmingLanguages: 'HTML5, CSS3, JavaScript',
+    toolsUsed: 'なし',
+    githubLink: [
+      {
+        name: 'LP',
+        url: 'https://github.com/OkazakiRui/jakunensha-monodukuri',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'LP',
+        url:
+          'https://click.ecc.ac.jp/ecc/rokazaki/works/jakunensha-monodukuri/',
+      },
+    ],
+    img: jakunenshaImg,
+    logo: jakunensha,
+  },
+  {
+    id: 8,
     title: 'Fribo',
     description:
       '女性または一人暮らしの方の悩みである、夜道が怖い。を解決するために作られたwebアプリです。',
@@ -221,21 +252,29 @@ export const worksData: WorkDataType[] = [
     toolsUsed: 'Vuejs, Firebase',
     githubLink: [
       {
+        name: 'LP',
+        url: 'https://github.com/OkazakiRui/Fribo-LP',
+      },
+      {
         name: 'APP',
-        url: 'https://github.com/OkazakiRui/Fribo',
+        url: 'https://github.com/OkazakiRui/Fribo-App',
       },
     ],
     productionLink: [
       {
+        name: 'LP',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/Fribo-LP/',
+      },
+      {
         name: 'APP',
-        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/fribo/',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/Fribo-App/',
       },
     ],
     img: FriboImg,
     logo: Fribo,
   },
   {
-    id: 8,
+    id: 9,
     title: 'nonst',
     description:
       '社会人になってストレスが溜まり、中高の友達とも疎遠になっていて愚痴る相手が居ない。を解決するマッチングアプリです。',
@@ -260,7 +299,7 @@ export const worksData: WorkDataType[] = [
     productionLink: [
       {
         name: 'APP',
-        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-app/',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-App/',
       },
       {
         name: 'LP',
@@ -269,5 +308,32 @@ export const worksData: WorkDataType[] = [
     ],
     img: nonstImg,
     logo: nonst,
+  },
+  {
+    id: 10,
+    title: 'portfolio React',
+    description:
+      '過去に作ったポートフォリオサイトを一部デザイン変更し、リニューアルしました。',
+    impressions: 'vuejsで一度作成したものをreactに移行して作成しました。',
+    teamProduction: 0,
+    position: 'Design, FrontEnd',
+    usetime: 10,
+    season: '2年後期',
+    programmingLanguages: 'React, TypeScript',
+    toolsUsed: 'Figma, Illustrator',
+    githubLink: [
+      {
+        name: 'Web',
+        url: 'https://github.com/OkazakiRui/portfolio-react',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'Web',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/',
+      },
+    ],
+    img: portfolioImg,
+    logo: portfolio,
   },
 ];
