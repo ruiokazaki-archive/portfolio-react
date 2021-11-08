@@ -33,7 +33,7 @@ const About: VFC = () => (
           avgTypingDelay={30}
           cursor={{ show: false }}
         >
-          <p>ECCコンピュータ専門学校 WEBデザイナー専攻2年</p>
+          <p>ECCコンピュータ専門学校23年卒予定 WEBデザイナー専攻2年</p>
         </ProfileSchool>
         <ProfileIntroduction
           startDelay={3500}
