@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams, Link } from 'react-router-dom';
 import { worksData } from '../../data/works';
 
 import { SubmitButton } from '../organisms/Contact.style';
@@ -32,12 +32,8 @@ const Work: VFC = () => {
       productionLink,
     } = worksData[Number(workId) - 1];
 
-    const toHome = () => {
-      // const History = useHistory();
-    };
-
     const githubLinks = githubLink.map((github) => (
-      <p>
+      <p key={github.name}>
         <a
           href={github.url}
           target="ruru"
@@ -59,7 +55,7 @@ const Work: VFC = () => {
       </p>
     ));
     const productionLinks = productionLink.map((production) => (
-      <p>
+      <p key={production.name}>
         <a
           href={production.url}
           target="ruru"
@@ -166,13 +162,11 @@ const Work: VFC = () => {
             >
               {toolsUsed}
             </p>
-            <SubmitButton
-              type="button"
-              style={{ marginTop: '80px' }}
-              onClick={toHome}
-            >
-              HOME
-            </SubmitButton>
+            <Link to="/">
+              <SubmitButton type="button" style={{ marginTop: '80px' }}>
+                HOME
+              </SubmitButton>
+            </Link>
           </div>
           {/* 右側 */}
           <div
