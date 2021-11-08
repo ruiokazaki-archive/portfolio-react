@@ -152,7 +152,7 @@ class Cursor {
         });
         // stokerの設定
         // 0.3s掛けて向かう
-        TweenMax.to(this.stoker_el, 0.3, {
+        TweenMax.to(this.stoker_el, 0.2, {
           css: {
             x: this.position.currentX - this.stoker_el.clientWidth / 2,
             y: this.position.currentY - this.stoker_el.clientHeight / 2,
