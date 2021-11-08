@@ -5,13 +5,14 @@ import { Ul, Li } from './HeaderNav.style';
 
 type Props = {
   scrollToSection: (id: string) => void;
+  workId?: string | undefined;
 };
 
-const HeaderNav: VFC<Props> = ({ scrollToSection }) => (
+const HeaderNav: VFC<Props> = ({ scrollToSection, workId }) => (
   <nav>
     <Ul>
       <Li
-        className="selectList"
+        className={workId ? '' : 'selectList'}
         onClick={() => {
           scrollToSection('Start');
         }}
@@ -33,6 +34,7 @@ const HeaderNav: VFC<Props> = ({ scrollToSection }) => (
         Profile <span>/&gt;</span>
       </Li>
       <Li
+        className={workId ? 'selectList' : ''}
         onClick={() => {
           scrollToSection('Works');
         }}

@@ -1,15 +1,19 @@
-import { VFC } from 'react';
+import { VFC, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import HeaderNav from '../../components/molecules/HeaderNav';
 
 const EnhancedHeaderNav: VFC = () => {
+  const { workId } = useParams();
+  const navigate = useNavigate();
   // page jamp
   const scrollToSection = (id: string): void => {
+    if (workId !== undefined) navigate('/');
     const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: 'smooth' });
   };
 
   // page scroll
-  window.addEventListener('load', () => {
+  useEffect(() => {
     const sectionNames: string[] = [];
     const sectionHeights: number[] = [];
     const sectionList = document.querySelectorAll('#root > div');
@@ -34,21 +38,28 @@ const EnhancedHeaderNav: VFC = () => {
 
     // classを付け替えて色を変更している
     const changeColors = () => {
-      const user: number = window.pageYOffset;
       const lists = document.querySelectorAll('li');
+
+      const user: number = window.pageYOffset;
+
       lists.forEach((el) => {
         el.classList.remove('selectList');
       });
-      if (user < sectionHeights[0]) {
+      if (user <= sectionHeights[0]) {
         lists[0].classList.add('selectList');
-      } else if (user < sectionHeights[1]) {
+      } else if (user <= sectionHeights[1]) {
         lists[1].classList.add('selectList');
-      } else if (user < sectionHeights[2]) {
+      } else if (user <= sectionHeights[2]) {
         lists[2].classList.add('selectList');
-      } else if (user < sectionHeights[3]) {
+      } else if (user <= sectionHeights[3]) {
         lists[3].classList.add('selectList');
-      } else if (user < sectionHeights[4]) {
+      } else if (user <= sectionHeights[4]) {
         lists[4].classList.add('selectList');
+      }
+
+      if (workId !== undefined) {
+        lists[0].classList.remove('selectList');
+        lists[3].classList.add('selectList');
       }
     };
 
@@ -58,7 +69,7 @@ const EnhancedHeaderNav: VFC = () => {
     window.addEventListener('scroll', scrollAction);
   });
 
-  return <HeaderNav scrollToSection={scrollToSection} />;
+  return <HeaderNav scrollToSection={scrollToSection} workId={workId} />;
 };
 
 export default EnhancedHeaderNav;
