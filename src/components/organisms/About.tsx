@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import SectionWrap from '../templates/SectionWrap';
+
 import {
   LeftContents,
   RightContents,
@@ -11,11 +11,15 @@ import {
   Link,
   LinkIcon,
 } from './About.style';
+import SectionWrap from '../templates/SectionWrap';
 
 // images
-import myself from '../../assets/images/myself.jpg';
-import github from '../../assets/svg/github.svg';
-import twitter from '../../assets/svg/twitter.svg';
+const myself =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/myself.jpg';
+const github =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
+const twitter =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Twitter.svg';
 
 const About: VFC = () => (
   <SectionWrap sectionTitle="About">
@@ -41,19 +45,17 @@ const About: VFC = () => (
           cursor={{ show: false }}
         >
           <p>
-            私は人を笑顔にする事と教える事が好きです。
+            私は、継続力に自信があります。
             <br />
-            専門学校に入り友人にプログラミングを教えたことがあります。
+            この強みは、専門学校に入り、最も発揮することが出来ました。
             <br />
-            プログラムが嫌いな友人が自分自身の力で出来るようになるたびに笑顔になってくれました。
+            専門学校入学当初、プログラミング経験がなく全く出来ませんでしたが、苦手を克服するために毎日勉強した結果、苦手を克服しクラスで一番できるようになりました。
             <br />
-            私も周りの人もそんな友人を見て、笑顔になり幸せな気持ちになったのでプログラミングにはそれだけの価値や力があるのだと確信しました。
+            今では、技術向上を目標に日々学習したことを誰でも見れる場所にアウトプットし、発信しています。
             <br />
-            私は将来好きなプログラミングに関わりながらも、周りが笑顔になるように働きたいと考えています。
+            アウトプットした情報に反応を貰えるとモチベーションが向上し、より継続することが出来ます。
             <br />
-            「一緒に働く人はもちろん、作成したものを使ってくれる人まで良い気分で居ることが出来る」
-            <br />
-            そんな人の気持ちを汲み取れるエンジニアを目指しています！！
+            この継続力はどの職場でも発揮することができる力だと思っています。
           </p>
         </ProfileIntroduction>
       </LeftContents>

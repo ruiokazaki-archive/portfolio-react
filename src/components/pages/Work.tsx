@@ -7,8 +7,10 @@ import { SubmitButton } from '../organisms/Contact.style';
 import Header from '../organisms/Header';
 import SectionTitle from '../atoms/SectionTitle';
 
-import githubIcon from '../../assets/svg/github.svg';
-import linkIcon from '../../assets/svg/link.svg';
+const githubIcon =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
+const linkIcon =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Link.svg';
 
 const Work: VFC = () => {
   const { workId } = useParams();

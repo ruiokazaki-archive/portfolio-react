@@ -6,9 +6,13 @@ import {
   SnsWrap,
   SnsImg,
 } from './Footer.style';
-import github from '../../assets/svg/github.svg';
-import instagram from '../../assets/svg/instagram.svg';
-import twitter from '../../assets/svg/twitter.svg';
+
+const github =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
+const instagram =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Instagram.svg';
+const twitter =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Twitter.svg';
 
 const Footer: VFC = () => (
   <FooterWrap>

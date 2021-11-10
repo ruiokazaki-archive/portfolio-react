@@ -1,21 +1,39 @@
-import InnerPeaceCafe from '../assets/svg/logo_IPC.svg';
-import nomino from '../assets/svg/logo_nomino.svg';
-import tappiness from '../assets/svg/logo_tappiness.svg';
-import Spark from '../assets/svg/logo_spark.svg';
-import portfolio from '../assets/svg/logo_portfolio.svg';
-import ECC from '../assets/svg/logo_ECC.svg';
-import jakunensha from '../assets/svg/logo_monodukuri.svg';
-import Fribo from '../assets/svg/logo_Fribo.svg';
-import nonst from '../assets/svg/logo_nonst.svg';
-import InnerPeaceCafeImg from '../assets/images/IPC_screen.jpg';
-import nominoImg from '../assets/images/nomino_screen.jpg';
-import tappinessImg from '../assets/images/tappiness_screen.jpg';
-import SparkImg from '../assets/images/spark_screen.jpg';
-import portfolioImg from '../assets/images/portfolio_screen.jpg';
-import ECCImg from '../assets/images/ECC_screen.jpg';
-import jakunenshaImg from '../assets/images/jakunen_screen.jpg';
-import FriboImg from '../assets/images/Fribo_screen.jpg';
-import nonstImg from '../assets/images/nonst_screen.jpg';
+const InnerPeaceCafe =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/InnerPeaceCafe_logo.svg';
+const InnerPeaceCafeImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/InnerPeaceCafe_screen.jpg';
+const NOMINO =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/NOMINO_logo.svg';
+const NOMINOImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/NOMINO_screen.jpg';
+const tappiness =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/tappiness_logo.svg';
+const tappinessImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/tappiness_screen.jpg';
+const Spark =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Spark_logo.svg';
+const SparkImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/Spark_screen.jpg';
+const portfolio =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/rurus-portfolio_logo.svg';
+const portfolioImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/rurus-portfolio_screen.jpg';
+const ECC =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/ECC_logo.svg';
+const ECCImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/ECC_screen.jpg';
+const CinemaTangerine =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/CinemaTangerine_logo.svg';
+const CinemaTangerineImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/CinemaTangerine_screen.jpg';
+const Fribo =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Fribo_logo.svg';
+const FriboImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/Fribo_screen.jpg';
+const NONST =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/NONST_logo.svg';
+const NONSTImg =
+  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/NONST_screen.jpg';
 
 type linkType = {
   name: string;
@@ -69,7 +87,7 @@ export const worksData: WorkDataType[] = [
   },
   {
     id: 2,
-    title: 'nomino',
+    title: 'NOMINO',
     description:
       'nominoは売り手の手間を最小限にした。面倒臭いがないフリマアプリです。買い手がすぐ見つかり従来のフリマアプリとは違いスピーディーな取引が可能です。',
     impressions:
@@ -93,8 +111,8 @@ export const worksData: WorkDataType[] = [
         url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nomino/',
       },
     ],
-    img: nominoImg,
-    logo: nomino,
+    img: NOMINOImg,
+    logo: NOMINO,
   },
   {
     id: 3,
@@ -174,7 +192,7 @@ export const worksData: WorkDataType[] = [
     productionLink: [
       {
         name: 'Web',
-        url: 'https://click.ecc.ac.jp/ecc/rokazaki/',
+        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/portfolio/',
       },
     ],
     img: portfolioImg,
@@ -234,8 +252,8 @@ export const worksData: WorkDataType[] = [
           'https://click.ecc.ac.jp/ecc/rokazaki/works/jakunensha-monodukuri/',
       },
     ],
-    img: jakunenshaImg,
-    logo: jakunensha,
+    img: CinemaTangerineImg,
+    logo: CinemaTangerine,
   },
   {
     id: 8,
@@ -275,7 +293,7 @@ export const worksData: WorkDataType[] = [
   },
   {
     id: 9,
-    title: 'nonst',
+    title: 'NONST',
     description:
       '社会人になってストレスが溜まり、中高の友達とも疎遠になっていて愚痴る相手が居ない。を解決するマッチングアプリです。',
     impressions:
@@ -306,8 +324,8 @@ export const worksData: WorkDataType[] = [
         url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/nonst-LP/',
       },
     ],
-    img: nonstImg,
-    logo: nonst,
+    img: NONSTImg,
+    logo: NONST,
   },
   {
     id: 10,
