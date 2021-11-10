@@ -1,11 +1,9 @@
 import { VFC } from 'react';
 import { Navigate, useParams, Link } from 'react-router-dom';
-import { worksData } from '../../data/works';
-
-import { SubmitButton } from '../organisms/Contact.style';
-
-import Header from '../organisms/Header';
-import SectionTitle from '../atoms/SectionTitle';
+import { worksData } from 'data/works';
+import { SubmitButton } from 'components/organisms/Contact.style';
+import Header from 'components/organisms/Header';
+import SectionTitle from 'components/atoms/SectionTitle';
 
 const githubIcon =
   'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 import { VFC, useRef, useEffect } from 'react';
 
-import ProfileCodeWrap from './ProfileElementCode.style';
+import ProfileCodeWrap from 'components/atoms/ProfileElementCode.style';
 
 type Props = {
   afterCode: string;

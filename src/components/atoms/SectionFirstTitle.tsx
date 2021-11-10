@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import SectionFirstTitleElement from './SectionFirstTitle.style';
+import SectionFirstTitleElement from 'components/atoms/SectionFirstTitle.style';
 
 type Props = {
   sectionTitle: string;

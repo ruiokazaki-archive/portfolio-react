@@ -1,5 +1,5 @@
 import { VFC } from 'react';
-import { Logo, Pink } from './HeaderLogo.style';
+import { Logo, Pink } from 'components/atoms/HeaderLogo.style';
 
 const HeaderLogo: VFC = () => (
   <Logo>

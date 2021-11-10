@@ -1,5 +1,5 @@
 import { VFC, useRef, RefObject, ChangeEvent, FocusEvent } from 'react';
-import Contact from '../../components/organisms/Contact';
+import Contact from 'components/organisms/Contact';
 
 const EnhancedContact: VFC = () => {
   const nameLabelRef = useRef<HTMLLabelElement>(null);

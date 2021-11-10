@@ -1,5 +1,5 @@
 import { VFC, ReactNode } from 'react';
-import ContentWrap from './ContentWrap.style';
+import ContentWrap from 'components/templates/ContentWrap.style';
 
 type Props = {
   children: ReactNode;

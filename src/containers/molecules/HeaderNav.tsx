@@ -1,6 +1,6 @@
 import { VFC, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import HeaderNav from '../../components/molecules/HeaderNav';
+import HeaderNav from 'components/molecules/HeaderNav';
 
 const EnhancedHeaderNav: VFC = () => {
   const { workId } = useParams();

@@ -1,8 +1,8 @@
 import { VFC } from 'react';
 import DOMPurify from 'dompurify';
 
-import { ProfileCode } from '../../data/profileSkillCode';
-import ProfileElementCode from '../../components/atoms/ProfileElementCode';
+import { ProfileCode } from 'data/profileSkillCode';
+import ProfileElementCode from 'components/atoms/ProfileElementCode';
 
 type Props = {
   profileData: ProfileCode;

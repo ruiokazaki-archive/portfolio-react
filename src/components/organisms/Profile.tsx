@@ -1,9 +1,9 @@
 /* eslint-disable no-irregular-whitespace */
 import { VFC } from 'react';
 
-import { ProfileCode } from '../../data/profileSkillCode';
-import SectionWrap from '../templates/SectionWrap';
-import ProfileElementCode from '../../containers/atoms/ProfileElementCode';
+import { ProfileCode } from 'data/profileSkillCode';
+import SectionWrap from 'components/templates/SectionWrap';
+import ProfileElementCode from 'containers/atoms/ProfileElementCode';
 
 type Props = {
   profileData: ProfileCode;

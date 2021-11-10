@@ -1,5 +1,8 @@
 import { VFC } from 'react';
-import { BackgroundWrap, BackgroundText } from './SectionBackground.style';
+import {
+  BackgroundWrap,
+  BackgroundText,
+} from 'components/molecules/SectionBackground.style';
 
 type Props = {
   sectionTitle: string;

@@ -10,8 +10,8 @@ import {
   LinkWrap,
   Link,
   LinkIcon,
-} from './About.style';
-import SectionWrap from '../templates/SectionWrap';
+} from 'components/organisms/About.style';
+import SectionWrap from 'components/templates/SectionWrap';
 
 // images
 const myself =

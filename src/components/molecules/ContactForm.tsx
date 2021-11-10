@@ -1,5 +1,5 @@
 import { VFC, ReactNode } from 'react';
-import Form from './ContactForm.style';
+import Form from 'components/molecules/ContactForm.style';
 
 type Props = {
   children: ReactNode;

@@ -5,7 +5,7 @@ import {
   CopyLight,
   SnsWrap,
   SnsImg,
-} from './Footer.style';
+} from 'components/organisms/Footer.style';
 
 const github =
   'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';

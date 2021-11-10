@@ -1,8 +1,8 @@
 import { VFC, ReactNode } from 'react';
-import SectionLastWrap from './SectionLastWrap.style';
-import ContentWrap from './ContentWrap';
-import SectionBackground from '../../containers/molecules/SectionBackground';
-import SectionTitle from '../atoms/SectionTitle';
+import SectionLastWrap from 'components/templates/SectionLastWrap.style';
+import ContentWrap from 'components/templates/ContentWrap';
+import SectionBackground from 'containers/molecules/SectionBackground';
+import SectionTitle from 'components/atoms/SectionTitle';
 
 type Props = {
   sectionTitle: string;

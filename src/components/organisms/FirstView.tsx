@@ -1,6 +1,6 @@
 import { VFC } from 'react';
-import { Title, SubTitle } from './FirstView.style';
-import SectionFirstWrap from '../templates/SectionFirstWrap';
+import { Title, SubTitle } from 'components/organisms/FirstView.style';
+import SectionFirstWrap from 'components/templates/SectionFirstWrap';
 
 const FirstView: VFC = () => (
   <SectionFirstWrap sectionTitle="Start">

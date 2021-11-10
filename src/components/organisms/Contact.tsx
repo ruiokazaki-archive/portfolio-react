@@ -1,7 +1,7 @@
 import { VFC, RefObject, ChangeEvent, FocusEvent } from 'react';
 
-import SectionLastWrap from '../templates/SectionLastWrap';
-import ContactForm from '../molecules/ContactForm';
+import SectionLastWrap from 'components/templates/SectionLastWrap';
+import ContactForm from 'components/molecules/ContactForm';
 import {
   Col2Wrap,
   Col1,
@@ -11,7 +11,7 @@ import {
   FocusBorder,
   Label,
   SubmitButton,
-} from './Contact.style';
+} from 'components/organisms/Contact.style';
 
 type Props = {
   nameLabelRef: RefObject<HTMLLabelElement>;

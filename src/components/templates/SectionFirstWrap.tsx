@@ -1,7 +1,7 @@
 import { VFC, ReactNode } from 'react';
-import SectionFirstWrap from './SectionFirstWrap.style';
-import SectionFirstTitle from '../atoms/SectionFirstTitle';
-import ContentWrap from './ContentWrap';
+import SectionFirstWrap from 'components/templates/SectionFirstWrap.style';
+import SectionFirstTitle from 'components/atoms/SectionFirstTitle';
+import ContentWrap from 'components/templates/ContentWrap';
 
 type Props = {
   sectionTitle: string;

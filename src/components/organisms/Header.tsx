@@ -1,7 +1,7 @@
 import { VFC } from 'react';
-import HeaderWrap from './Header.style';
-import HeaderLogo from '../atoms/HeaderLogo';
-import HeaderNav from '../../containers/molecules/HeaderNav';
+import HeaderWrap from 'components/organisms/Header.style';
+import HeaderLogo from 'components/atoms/HeaderLogo';
+import HeaderNav from 'containers/molecules/HeaderNav';
 
 const Header: VFC = () => (
   <HeaderWrap>

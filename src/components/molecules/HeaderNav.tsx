@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { VFC } from 'react';
-import { Ul, Li } from './HeaderNav.style';
+import { Ul, Li } from 'components/molecules/HeaderNav.style';
 
 type Props = {
   scrollToSection: (id: string) => void;

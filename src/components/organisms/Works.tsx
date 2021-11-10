@@ -1,8 +1,8 @@
 import { VFC } from 'react';
-import SectionWrap from '../templates/SectionWrap';
-import Work from '../atoms/Work';
-import { worksData } from '../../data/works';
-import WorksWrap from './Works.style';
+import SectionWrap from 'components/templates/SectionWrap';
+import Work from 'components/atoms/Work';
+import { worksData } from 'data/works';
+import WorksWrap from 'components/organisms/Works.style';
 
 const Works: VFC = () => (
   <SectionWrap sectionTitle="Works">

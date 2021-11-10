@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 import { Link } from 'react-router-dom';
-import { Tilt, LogoWrap } from './Work.style';
-import { WorkDataType } from '../../data/works';
+import { Tilt, LogoWrap } from 'components/atoms/Work.style';
+import { WorkDataType } from 'data/works';
 
 type Props = {
   workData: WorkDataType;
