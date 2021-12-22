@@ -4,11 +4,7 @@ import { worksData } from 'data/works';
 import { SubmitButton } from 'components/organisms/Contact.style';
 import Header from 'components/organisms/Header';
 import SectionTitle from 'components/atoms/SectionTitle';
-
-const githubIcon =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
-const linkIcon =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Link.svg';
+import Links from 'components/atoms/Links';
 
 const Work: VFC = () => {
   const { workId } = useParams();
@@ -32,50 +28,50 @@ const Work: VFC = () => {
       productionLink,
     } = worksData[Number(workId) - 1];
 
-    const githubLinks = githubLink.map((github) => (
-      <p key={github.name}>
-        <a
-          href={github.url}
-          target="ruru"
-          className="flex items-center text-pink1"
-          style={{ marginBottom: '16px', fontSize: '16px' }}
-        >
-          <img
-            style={{
-              width: '20px',
-              height: '20px',
-              display: 'block',
-              marginRight: '8px',
-            }}
-            src={githubIcon}
-            alt="githubのアイコン"
-          />
-          {github.name} - {github.url}
-        </a>
-      </p>
-    ));
-    const productionLinks = productionLink.map((production) => (
-      <p key={production.name}>
-        <a
-          href={production.url}
-          target="ruru"
-          className="flex items-center text-green1"
-          style={{ marginBottom: '16px', fontSize: '16px' }}
-        >
-          <img
-            style={{
-              width: '20px',
-              height: '20px',
-              display: 'block',
-              marginRight: '8px',
-            }}
-            src={linkIcon}
-            alt="linkのアイコン"
-          />
-          {production.name} - {production.url}
-        </a>
-      </p>
-    ));
+    // const githubLinks = githubLink.map((github) => (
+    //   <p key={github.name}>
+    //     <a
+    //       href={github.url}
+    //       target="ruru"
+    //       className="flex items-center text-pink1"
+    //       style={{ marginBottom: '16px', fontSize: '16px' }}
+    //     >
+    //       <img
+    //         style={{
+    //           width: '20px',
+    //           height: '20px',
+    //           display: 'block',
+    //           marginRight: '8px',
+    //         }}
+    //         src={githubIcon}
+    //         alt="githubのアイコン"
+    //       />
+    //       {github.name} - {github.url}
+    //     </a>
+    //   </p>
+    // ));
+    // const productionLinks = productionLink.map((production) => (
+    //   <p key={production.name}>
+    //     <a
+    //       href={production.url}
+    //       target="ruru"
+    //       className="flex items-center text-green1"
+    //       style={{ marginBottom: '16px', fontSize: '16px' }}
+    //     >
+    //       <img
+    //         style={{
+    //           width: '20px',
+    //           height: '20px',
+    //           display: 'block',
+    //           marginRight: '8px',
+    //         }}
+    //         src={linkIcon}
+    //         alt="linkのアイコン"
+    //       />
+    //       {production.name} - {production.url}
+    //     </a>
+    //   </p>
+    // ));
 
     return (
       <>
@@ -258,8 +254,8 @@ const Work: VFC = () => {
             </figure>
 
             <div style={{ marginTop: '32px' }}>
-              {githubLinks}
-              {productionLinks}
+              <Links links={githubLink} type="github" />
+              <Links links={productionLink} type="link" />
             </div>
           </div>
         </div>

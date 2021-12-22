@@ -35,7 +35,7 @@ const NONST =
 const NONSTImg =
   'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/NONST_screen.jpg';
 
-type linkType = {
+export type linkType = {
   name: string;
   url: string;
 };

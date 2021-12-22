@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  cursor: none;
+  /* cursor: none; */
 }
 
 html {
