@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 
 import Header from 'components/organisms/Header';
-import FirstView from 'components/organisms/FirstView';
+import FirstView from 'containers/organisms/FirstView';
 import About from 'components/organisms/About';
 import Works from 'components/organisms/Works';
 import Footer from 'components/organisms/Footer';
