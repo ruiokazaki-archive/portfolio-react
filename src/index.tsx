@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from 'App';
 import reportWebVitals from 'reportWebVitals';
 
+// import './script/TweenMax.min';
+// import './script/mouse';
+
 // styles
 import 'ress';
 import 'index.css';

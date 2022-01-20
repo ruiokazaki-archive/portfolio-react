@@ -32,6 +32,7 @@
     "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.2.3",
+    "vanta": "^0.5.21",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
