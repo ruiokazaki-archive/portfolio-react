@@ -20,7 +20,6 @@ const ProfileCodeWrapStyle = styled.div`
     transform: translateX(-50%);
     z-index: -1;
     background-color: #1a1526;
-    cursor: default;
   }
   .codeWrap::before {
     color: #f2f2f2;
