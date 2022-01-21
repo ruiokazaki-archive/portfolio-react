@@ -1,5 +1,4 @@
 import { VFC } from 'react';
-import Img from 'components/atoms/WorkScreenImg.style';
 
 type Props = {
   imgSrc: string;
