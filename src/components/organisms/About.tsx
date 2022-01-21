@@ -14,12 +14,9 @@ import {
 import SectionWrap from 'components/templates/SectionWrap';
 
 // images
-const myself =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/myself.jpg';
-const github =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
-const twitter =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Twitter.svg';
+import myself from 'assets/images/myself.jpg';
+import github from 'assets/svg/github.svg';
+import twitter from 'assets/svg/twitter.svg';
 
 const About: VFC = () => (
   <SectionWrap sectionTitle="About">

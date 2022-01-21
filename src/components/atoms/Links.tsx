@@ -1,11 +1,8 @@
 import React, { VFC } from 'react';
 import { linkType } from 'data/works';
 import { GithubLink, OtherLink, Img } from 'components/atoms/Links.style';
-
-const githubIcon =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Github.svg';
-const linkIcon =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Link.svg';
+import githubIcon from 'assets/svg/github.svg';
+import linkIcon from 'assets/svg/link.svg';
 
 type Props = {
   links: linkType[];

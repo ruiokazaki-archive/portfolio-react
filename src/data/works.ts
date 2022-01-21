@@ -1,39 +1,21 @@
-const InnerPeaceCafe =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/InnerPeaceCafe_logo.svg';
-const InnerPeaceCafeImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/InnerPeaceCafe_screen.jpg';
-const NOMINO =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/NOMINO_logo.svg';
-const NOMINOImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/NOMINO_screen.jpg';
-const tappiness =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/tappiness_logo.svg';
-const tappinessImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/tappiness_screen.jpg';
-const Spark =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Spark_logo.svg';
-const SparkImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/Spark_screen.jpg';
-const portfolio =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/rurus-portfolio_logo.svg';
-const portfolioImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/rurus-portfolio_screen.jpg';
-const ECC =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/ECC_logo.svg';
-const ECCImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/ECC_screen.jpg';
-const CinemaTangerine =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/CinemaTangerine_logo.svg';
-const CinemaTangerineImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/CinemaTangerine_screen.jpg';
-const Fribo =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/Fribo_logo.svg';
-const FriboImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/Fribo_screen.jpg';
-const NONST =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/svg/NONST_logo.svg';
-const NONSTImg =
-  'https://click.ecc.ac.jp/ecc/rokazaki/rurus_portfolio/images/NONST_screen.jpg';
+import InnerPeaceCafeImg from 'assets/images/InnerPeaceCafe_screen.jpg';
+import InnerPeaceCafe from 'assets/svg/InnerPeaceCafe_logo.svg';
+import NOMINOImg from 'assets/images/NOMINO_screen.jpg';
+import NOMINO from 'assets/svg/NOMINO_logo.svg';
+import tappinessImg from 'assets/images/tappiness_screen.jpg';
+import tappiness from 'assets/svg/tappiness_logo.svg';
+import SparkImg from 'assets/images/Spark_screen.jpg';
+import Spark from 'assets/svg/Spark_logo.svg';
+import portfolioImg from 'assets/images/rurus-portfolio_screen.jpg';
+import portfolio from 'assets/svg/rurus-portfolio_logo.svg';
+import ECCImg from 'assets/images/ECC_screen.jpg';
+import ECC from 'assets/svg/ECC_logo.svg';
+import CinemaTangerineImg from 'assets/images/CinemaTangerine_screen.jpg';
+import CinemaTangerine from 'assets/svg/CinemaTangerine_logo.svg';
+import FriboImg from 'assets/images/Fribo_screen.jpg';
+import Fribo from 'assets/svg/Fribo_logo.svg';
+import NONSTImg from 'assets/images/NONST_screen.jpg';
+import NONST from 'assets/svg/NONST_logo.svg';
 
 export type linkType = {
   name: string;
