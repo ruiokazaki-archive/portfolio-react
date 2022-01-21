@@ -1,5 +1,8 @@
+/* eslint-disable */
 import { VFC, useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router';
+
+import { cursor } from 'script/mouse';
 
 import Home from 'components/pages/Home';
 import Work from 'components/pages/Work';
@@ -10,6 +13,10 @@ const App: VFC = () => {
   useEffect(() => {
     if (!hash) window.scrollTo(0, 0);
   }, [hash, pathname]);
+
+  useEffect(() => {
+    cursor.init();
+  }, []);
 
   return (
     <>
