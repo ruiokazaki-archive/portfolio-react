@@ -15,7 +15,13 @@ type Props = {
 const Links: VFC<Props> = ({ links, type }) => (
   <>
     {links.map((link) => (
-      <p key={link.name}>
+      <p
+        key={link.name}
+        style={{
+          marginBottom: '16px',
+          fontSize: '16px',
+        }}
+      >
         {type === 'github' ? (
           <GithubLink href={link.url} target="ruru">
             <Img src={githubIcon} alt="githubのアイコン" />
