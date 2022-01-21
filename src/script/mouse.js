@@ -1,3 +1,4 @@
+/* eslint-disable */
 class Cursor {
   constructor() {
     const el = `
