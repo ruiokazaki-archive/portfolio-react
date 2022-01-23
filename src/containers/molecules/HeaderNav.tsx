@@ -1,9 +1,11 @@
 import { VFC, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import HeaderNav from 'components/molecules/HeaderNav';
 
 const EnhancedHeaderNav: VFC = () => {
   const { workId } = useParams();
+  const { pathname } = useLocation();
+
   const navigate = useNavigate();
   // page jamp
   const scrollToSection = (id: string): void => {
@@ -60,6 +62,11 @@ const EnhancedHeaderNav: VFC = () => {
       if (workId !== undefined) {
         lists[0].classList.remove('selectList');
         lists[3].classList.add('selectList');
+      }
+
+      if (pathname === '/about') {
+        lists[0].classList.remove('selectList');
+        lists[1].classList.add('selectList');
       }
     };
 
