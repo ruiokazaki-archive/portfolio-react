@@ -48,11 +48,11 @@ const LinkWrapStyle = styled.div`
 `;
 export const LinkWrap = tw(LinkWrapStyle)`flex justify-between`;
 
-const LinkStyle = styled.a`
+const LinkTagStyle = styled.a`
   font-size: 18px;
   line-height: 21px;
 `;
-export const Link = tw(LinkStyle)`flex items-center text-pink1 shadow`;
+export const LinkTag = tw(LinkTagStyle)`flex items-center text-pink1 shadow`;
 
 const LinkIconStyle = styled.figure`
   margin-right: 5px;

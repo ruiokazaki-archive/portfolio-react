@@ -8,7 +8,7 @@ import {
   ProfileIntroduction,
   ProfileImage,
   LinkWrap,
-  Link,
+  LinkTag,
   LinkIcon,
   AboutButton,
 } from 'components/organisms/About.style';
@@ -60,18 +60,18 @@ const About: VFC<Props> = ({ handleClick }) => (
           <img src={myself} alt="岡崎流依の写真" />
         </ProfileImage>
         <LinkWrap>
-          <Link href="https://github.com/OkazakiRui" target="ruru">
+          <LinkTag href="https://github.com/OkazakiRui" target="ruru">
             <LinkIcon>
               <img src={github} alt="岡崎流依のgithub" />
             </LinkIcon>
             OkazakiRui
-          </Link>
-          <Link href="https://twitter.com/yoruhanemutaiyo" target="ruru">
+          </LinkTag>
+          <LinkTag href="https://twitter.com/yoruhanemutaiyo" target="ruru">
             <LinkIcon>
               <img src={twitter} alt="岡崎流依のTwitter" />
             </LinkIcon>
             yoruhanemutaiyo
-          </Link>
+          </LinkTag>
         </LinkWrap>
       </RightContents>
     </div>
