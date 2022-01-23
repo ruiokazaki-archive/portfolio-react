@@ -10,6 +10,7 @@ import {
   LinkWrap,
   Link,
   LinkIcon,
+  AboutButton,
 } from 'components/organisms/About.style';
 import SectionWrap from 'components/templates/SectionWrap';
 
@@ -18,9 +19,13 @@ import myself from 'assets/images/myself.jpg';
 import github from 'assets/svg/github.svg';
 import twitter from 'assets/svg/twitter.svg';
 
-const About: VFC = () => (
+type Props = {
+  handleClick: () => void;
+};
+
+const About: VFC<Props> = ({ handleClick }) => (
   <SectionWrap sectionTitle="About">
-    <div className="flex items-center justify-between">
+    <div className="flex justify-between mb-24">
       <LeftContents>
         <ProfileName
           startDelay={2500}
@@ -42,17 +47,11 @@ const About: VFC = () => (
           cursor={{ show: false }}
         >
           <p>
-            私は、継続力に自信があります。
+            2002年2月6日 兵庫県出身
             <br />
-            この強みは、専門学校に入り、最も発揮することが出来ました。
+            現在はフロント領域を中心に勉強しており、最近は作れるものの幅を広げる為にフロントと関わりのある技術も勉強しています。
             <br />
-            専門学校入学当初、プログラミング経験がなく全く出来ませんでしたが、苦手を克服するために毎日勉強した結果、苦手を克服しクラスで一番できるようになりました。
-            <br />
-            今では、技術向上を目標に日々学習したことを誰でも見れる場所にアウトプットし、発信しています。
-            <br />
-            アウトプットした情報に反応を貰えるとモチベーションが向上し、より継続することが出来ます。
-            <br />
-            この継続力はどの職場でも発揮することができる力だと思っています。
+            将来はチームのリードエンジニアとして人を引っ張っていけるようになりたいです。
           </p>
         </ProfileIntroduction>
       </LeftContents>
@@ -69,13 +68,14 @@ const About: VFC = () => (
           </Link>
           <Link href="https://twitter.com/yoruhanemutaiyo" target="ruru">
             <LinkIcon>
-              <img src={twitter} alt="岡崎流依のinstagram" />
+              <img src={twitter} alt="岡崎流依のTwitter" />
             </LinkIcon>
             yoruhanemutaiyo
           </Link>
         </LinkWrap>
       </RightContents>
     </div>
+    <AboutButton onClick={handleClick}>SEE MORE</AboutButton>
   </SectionWrap>
 );
 

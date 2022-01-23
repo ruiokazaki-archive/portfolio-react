@@ -8,7 +8,7 @@ const FirstView: VFC = () => (
       <h3>
         Hi, I&apos;m <span className="text-pink1">Rui Okazaki</span>
         <br />
-        I&apos;m a Front End Engineer<span className="text-pink1">.</span>
+        I&apos;m a Front End Developer<span className="text-pink1">.</span>
       </h3>
     </Title>
     <SubTitle startDelay={2800} avgTypingDelay={40} cursor={{ show: false }}>
