@@ -67,7 +67,7 @@ const Work: VFC = () => {
             <p
               style={{
                 marginBottom: '32px',
-                fontSize: '14px',
+                fontSize: '16px',
                 lineHeight: '28px',
               }}
             >
@@ -77,7 +77,7 @@ const Work: VFC = () => {
             <p
               style={{
                 marginBottom: '32px',
-                fontSize: '14px',
+                fontSize: '16px',
                 lineHeight: '28px',
               }}
             >
@@ -87,7 +87,7 @@ const Work: VFC = () => {
             <p
               style={{
                 marginBottom: '32px',
-                fontSize: '14px',
+                fontSize: '16px',
                 lineHeight: '28px',
               }}
             >
@@ -97,7 +97,7 @@ const Work: VFC = () => {
             <p
               style={{
                 marginBottom: '32px',
-                fontSize: '14px',
+                fontSize: '16px',
                 lineHeight: '28px',
               }}
             >
@@ -107,7 +107,7 @@ const Work: VFC = () => {
             <p
               style={{
                 marginBottom: '32px',
-                fontSize: '14px',
+                fontSize: '16px',
                 lineHeight: '28px',
               }}
             >
@@ -142,7 +142,7 @@ const Work: VFC = () => {
                   borderRadius: '8px',
                   width: '67px',
                   height: '67px',
-                  fontSize: '14px',
+                  fontSize: '16px',
                   lineHeight: '18px',
                 }}
               >
@@ -162,7 +162,7 @@ const Work: VFC = () => {
                   borderRadius: '8px',
                   width: '67px',
                   height: '67px',
-                  fontSize: '14px',
+                  fontSize: '16px',
                   lineHeight: '18px',
                 }}
               >
@@ -182,7 +182,7 @@ const Work: VFC = () => {
                   borderRadius: '8px',
                   width: '67px',
                   height: '67px',
-                  fontSize: '14px',
+                  fontSize: '16px',
                   lineHeight: '18px',
                 }}
               >
