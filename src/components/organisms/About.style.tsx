@@ -4,7 +4,7 @@ import Typist from 'react-typist';
 
 const LeftContentsStyle = styled.section`
   width: 487px;
-  height: fit-content;
+  height: 400px;
 `;
 export const LeftContents = tw(LeftContentsStyle)`flex flex-col`;
 
