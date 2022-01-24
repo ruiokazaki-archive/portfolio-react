@@ -35,7 +35,7 @@ const EnhancedHeaderNav: VFC = () => {
       }
       const iElement = document.getElementById(sectionNames[i]);
       if (iElement === null) break;
-      sectionHeights.push(total + iElement.offsetHeight);
+      sectionHeights.push(total + iElement.offsetHeight - 1);
     }
 
     // classを付け替えて色を変更している
