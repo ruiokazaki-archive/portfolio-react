@@ -25,7 +25,7 @@ type Props = {
 
 const About: VFC<Props> = ({ handleClick }) => (
   <SectionWrap sectionTitle="About">
-    <div className="flex justify-between mb-24">
+    <div className="flex justify-between items-center mb-24">
       <LeftContents>
         <ProfileName
           startDelay={2500}
@@ -47,11 +47,19 @@ const About: VFC<Props> = ({ handleClick }) => (
           cursor={{ show: false }}
         >
           <p>
-            2002年2月6日 兵庫県出身
+            私は継続力と好奇心があります。
+            <br />
+            専門学校入学当初、プログラミング経験がなく全く出来ませんでしたが、苦手を克服するために毎日勉強した結果、苦手を克服し勉強し1年半が経過した頃力試しで出場した全国大会2回銀賞を頂くことができました。
+            <br />
+            そして今では自分の作りたいものが形できるプログラミングが好きになりました。
             <br />
             現在はフロント領域を中心に勉強しており、最近は作れるものの幅を広げる為にフロントと関わりのある技術も勉強しています。
             <br />
-            将来はチームのリードエンジニアとして人を引っ張っていけるようになりたいです。
+            そして、学習したことで小さなアプリ等を作成し、誰でも見れる場所にアウトプットし発信しています。
+            <br />
+            アウトプットした情報に反応が貰えるとモチベーションが向上し、より継続することが出来ます。
+            <br />
+            この継続力と好奇心はどの職場でも発揮することができる力だと思っています。
           </p>
         </ProfileIntroduction>
       </LeftContents>
