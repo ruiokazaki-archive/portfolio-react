@@ -9,7 +9,7 @@ const EnhancedHeaderNav: VFC = () => {
   const navigate = useNavigate();
   // page jamp
   const scrollToSection = (id: string): void => {
-    if (workId !== undefined) navigate('/');
+    if (workId !== undefined || pathname !== undefined) navigate('/');
     const el = document.getElementById(id);
     el?.scrollIntoView({ behavior: 'smooth' });
   };
