@@ -6,9 +6,6 @@ import { SubmitButton } from 'components/organisms/Contact.style';
 import {
   LeftContents,
   RightContents,
-  ProfileName,
-  ProfileSchool,
-  ProfileIntroduction,
   ProfileImage,
   LinkWrap,
   LinkTag,
@@ -29,7 +26,7 @@ const About: VFC = () => (
         marginInline: 'auto',
         width: '868px',
         padding: '75px 22px',
-        paddingTop: '160px',
+        paddingTop: '80px',
       }}
     >
       <SectionTitle sectionTitle="About" />
@@ -39,35 +36,61 @@ const About: VFC = () => (
         }}
         className="text-white1"
       >
-        <div className="flex justify-between mb-24">
+        <div
+          className="absolute"
+          style={{
+            height: 'calc(100% + 64px)',
+            background: '#f858f1',
+            width: '2px',
+            top: '-64px',
+            left: '-2px',
+          }}
+        />
+        {/* index about */}
+        <div className="flex justify-between items-center mb-24">
           <LeftContents>
-            <ProfileName
-              startDelay={2500}
-              avgTypingDelay={30}
-              cursor={{ show: false }}
+            <h3
+              style={{
+                lineHeight: '49px',
+                letterSpacing: '10px',
+                fontSize: '42px',
+                marginTop: '10px',
+                marginBottom: '10px',
+              }}
+              className="font-bold order-2"
             >
-              <h3>RUI OKAZAKI</h3>
-            </ProfileName>
-            <ProfileSchool
-              startDelay={1000}
-              avgTypingDelay={30}
-              cursor={{ show: false }}
+              RUI OKAZAKI
+            </h3>
+            <p
+              style={{
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+              className="text-gray1 order-1"
             >
-              <p>ECCコンピュータ専門学校23年卒予定 WEBデザイナー専攻2年</p>
-            </ProfileSchool>
-            <ProfileIntroduction
-              startDelay={3500}
-              avgTypingDelay={30}
-              cursor={{ show: false }}
+              ECCコンピュータ専門学校23年卒予定 WEBデザイナー専攻2年
+            </p>
+            <p
+              style={{
+                fontSize: '14px',
+                lineHeight: '28px',
+              }}
+              className="text-justify order-3"
             >
-              <p>
-                2002年2月6日 兵庫県出身
-                <br />
-                現在はフロント領域を中心に勉強しており、最近は作れるものの幅を広げる為にフロントと関わりのある技術も勉強しています。
-                <br />
-                将来はチームのリードエンジニアとして人を引っ張っていけるようになりたいです。
-              </p>
-            </ProfileIntroduction>
+              私は継続力と好奇心があります。
+              <br />
+              専門学校入学当初、プログラミング経験がなく全く出来ませんでしたが、苦手を克服するために毎日勉強した結果、苦手を克服し勉強し1年半が経過した頃力試しで出場した全国大会2回銀賞を頂くことができました。
+              <br />
+              そして今では自分の作りたいものが形できるプログラミングが好きになりました。
+              <br />
+              現在はフロント領域を中心に勉強しており、最近は作れるものの幅を広げる為にフロントと関わりのある技術も勉強しています。
+              <br />
+              そして、学習したことで小さなアプリ等を作成し、誰でも見れる場所にアウトプットし発信しています。
+              <br />
+              アウトプットした情報に反応が貰えるとモチベーションが向上し、より継続することが出来ます。
+              <br />
+              この継続力と好奇心はどの職場でも発揮することができる力だと思っています。
+            </p>
           </LeftContents>
           <RightContents>
             <ProfileImage>
@@ -89,17 +112,7 @@ const About: VFC = () => (
             </LinkWrap>
           </RightContents>
         </div>
-
-        <div
-          className="absolute"
-          style={{
-            height: 'calc(100% + 64px)',
-            background: '#f858f1',
-            width: '2px',
-            top: '-64px',
-            left: '-2px',
-          }}
-        />
+        {/* index about END */}
 
         <SectionTitle sectionTitle="受賞歴" />
         <p
@@ -108,34 +121,32 @@ const About: VFC = () => (
             fontSize: '16px',
             lineHeight: '28px',
           }}
+          className="flex flex-col gap-2"
         >
-          open hacku 2020 優秀賞 , 若年者銀賞 , 技能五輪銀賞
-        </p>
-        <SectionTitle sectionTitle="なりたいエンジニア像" />
-        <p
-          style={{
-            marginBottom: '32px',
-            fontSize: '16px',
-            lineHeight: '28px',
-          }}
-        >
-          自分がどんなエンジニアになりたいか
-          <br />
-          なぜそんなエンジニアになりたいのか
-          <br />
-          その為に今何をしているのか
-        </p>
-        <SectionTitle sectionTitle="仕事に対する姿勢" />
-        <p
-          style={{
-            marginBottom: '32px',
-            fontSize: '16px',
-            lineHeight: '28px',
-          }}
-        >
-          自分がどんな気持ちで仕事に臨むのか、何を大切にしているのかを記述する
-          <br />
-          その為に今何をしているのか
+          <a
+            href="https://www.javada.or.jp/jigyou/gino/zenkoku/n_59/kadai/39.html"
+            className="border-b-2 block"
+            style={{ width: 'fit-content' }}
+            target="ruru"
+          >
+            2021年度開催 第59回技能五輪全国大会 ウェブデザイン職種 銀賞
+          </a>
+          <a
+            href="https://www.javada.or.jp/jyakunen20/16/kadai/11.html"
+            className="border-b-2 block"
+            style={{ width: 'fit-content' }}
+            target="ruru"
+          >
+            2021年度開催 第16回若年者ものづくり競技大会 ウェブデザイン職種 銀賞
+          </a>
+          <a
+            href="https://hacku.yahoo.co.jp/hacku2020online3/"
+            className="border-b-2 block"
+            style={{ width: 'fit-content' }}
+            target="ruru"
+          >
+            2020年度開催 Yahoo! Open Hack U 2020 Online Vol.3 優秀賞
+          </a>
         </p>
         <SectionTitle sectionTitle="インターンシップ" />
         <p
@@ -145,7 +156,28 @@ const About: VFC = () => (
             lineHeight: '28px',
           }}
         >
-          インターンで何をしているのか。どういう立場なのか。を説明する
+          2021年10月から 株式会社inprog
+          にてフロントエンドエンジニアとして長期インターンしています。
+          <br />
+          Nextjs, TypeScript, hasura, GraphQL, Git
+          を使用しwebアプリを作成しています。
+          <br />
+          エンジニアが私含め2人でフロントエンド部分をほぼ1人で開発しています。
+        </p>
+        <SectionTitle sectionTitle="現在していること" />
+        <p
+          style={{
+            marginBottom: '32px',
+            fontSize: '16px',
+            lineHeight: '28px',
+          }}
+        >
+          現在は校内アプリが使いにくいので、学生のための校内アプリを作成中です。
+          <br />
+          スクレイピングで校内のアプリのデータを取得しRESTFul
+          apiを作成しました。
+          <br />
+          卒業までに、webのPWA版 ios版 android版をリリースする予定です。
         </p>
         <Link to="/">
           <SubmitButton type="button" style={{ marginTop: '80px' }}>
