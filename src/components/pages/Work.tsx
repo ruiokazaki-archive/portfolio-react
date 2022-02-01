@@ -70,9 +70,9 @@ const Work: VFC = () => {
                 fontSize: '16px',
                 lineHeight: '28px',
               }}
-            >
-              {description}
-            </p>
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
             <SectionTitle sectionTitle="Position" />
             <p
               style={{
@@ -90,9 +90,9 @@ const Work: VFC = () => {
                 fontSize: '16px',
                 lineHeight: '28px',
               }}
-            >
-              {impressions}
-            </p>
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: impressions }}
+            />
             <SectionTitle sectionTitle="ProgrammingLanguages" />
             <p
               style={{
