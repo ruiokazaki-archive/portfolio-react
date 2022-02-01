@@ -16,6 +16,8 @@ import FriboImg from 'assets/images/Fribo_screen.jpg';
 import Fribo from 'assets/svg/Fribo_logo.svg';
 import NONSTImg from 'assets/images/NONST_screen.jpg';
 import NONST from 'assets/svg/NONST_logo.svg';
+import umiToKokoroToBokuImg from 'assets/images/umiToKokoroToBoku_screen.jpg';
+import umiToKokoroToBoku from 'assets/svg/umiToKokoroToBoku_logo.svg';
 
 export type linkType = {
   name: string;
@@ -335,5 +337,36 @@ export const worksData: WorkDataType[] = [
     ],
     img: portfolioImg,
     logo: portfolio,
+  },
+  {
+    id: 11,
+    title: 'うみとこころとぼく',
+    description:
+      '普段からSNSを運用していると、ふとした発言が誰かを傷つけてしまったり、少し前の自分の投稿すらも過度に気にしてしまい、なんてことない呟きすらも億劫になってしまいます。<br />SNSで疲れた現代人が、ゆったりまったりとした世界観でリラックスできるSNSがあったらいいなと思い、このサービスを作成しました。',
+    impressions: '初めてchromeの拡張機能を作成しました。また、今回はフレームワークを使用せず関心ごとにまとまるように設計を心がけました。',
+    teamProduction: 1,
+    position: 'FrontEnd, BackEnd',
+    usetime: 16,
+    season: '2年後期',
+    programmingLanguages: 'HTML5, SCSS, JavaScript, Laravel',
+    toolsUsed: 'Figma',
+    githubLink: [
+      {
+        name: 'ExtensionsFrontEnd',
+        url: 'https://github.com/OkazakiRui/umiToKokoroToBoku-frontend',
+      },
+      {
+        name: 'ExtensionsBackEnd',
+        url: 'https://github.com/OkazakiRui/umiToKokoroToBoku-api',
+      },
+    ],
+    productionLink: [
+      {
+        name: 'ChromeExtensions',
+        url: 'https://chrome.google.com/webstore/search/うみとこころとぼく',
+      },
+    ],
+    img: umiToKokoroToBokuImg,
+    logo: umiToKokoroToBoku,
   },
 ];
