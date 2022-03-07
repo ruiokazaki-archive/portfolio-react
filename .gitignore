@@ -132,3 +132,6 @@ dist
 
 # build file
 build/
+
+
+.firebase/
