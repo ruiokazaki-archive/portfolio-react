@@ -68,7 +68,7 @@ const About: VFC = () => (
               }}
               className="text-gray1 order-1"
             >
-              ECCコンピュータ専門学校23年卒予定 WEBデザイナー専攻2年
+              専門学校23年卒予定
             </p>
             <p
               style={{

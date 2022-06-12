@@ -28,7 +28,7 @@ const About: VFC<Props> = ({ handleClick }) => (
     <div className="flex justify-between items-center mb-24">
       <LeftContents>
         <ProfileName
-          startDelay={2500}
+          startDelay={2000}
           avgTypingDelay={30}
           cursor={{ show: false }}
         >
@@ -42,7 +42,7 @@ const About: VFC<Props> = ({ handleClick }) => (
           <p>専門学校23年卒予定</p>
         </ProfileSchool>
         <ProfileIntroduction
-          startDelay={3500}
+          startDelay={3000}
           avgTypingDelay={30}
           cursor={{ show: false }}
         >
