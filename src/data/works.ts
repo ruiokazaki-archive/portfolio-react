@@ -4,8 +4,8 @@ import SparkImg from 'assets/images/spark_screen.jpg';
 import Spark from 'assets/svg/Spark_logo.svg';
 import portfolioImg from 'assets/images/rurus-portfolio_screen.jpg';
 import portfolio from 'assets/svg/rurus-portfolio_logo.svg';
-import ECCImg from 'assets/images/ECC_screen.jpg';
-import ECC from 'assets/svg/ECC_logo.svg';
+// import ECCImg from 'assets/images/ECC_screen.jpg';
+// import ECC from 'assets/svg/ECC_logo.svg';
 import NONSTImg from 'assets/images/nonst_screen.jpg';
 import NONST from 'assets/svg/NONST_logo.svg';
 import umiToKokoroToBokuImg from 'assets/images/umiToKokoroToBoku_screen.jpg';
@@ -128,34 +128,6 @@ export const worksData: WorkDataType[] = [
   },
   {
     id: 4,
-    title: 'ECC学生アプリ',
-    description:
-      '現在apple storeにあるECC学生アプリは学生の間で使いにくいと評判があり、学校側も学生が通知欄を見ないので困っています。<br />そこで、ECC学生アプリを本来の機能とプラスして使いやすい機能を搭載して実装することで学生が使い続けたくなるアプリを作成したいと考えました。',
-    impressions:
-      'apiの作り方やスクレイピングについて学ぶことが出来ました。<br />現在アプリは開発中です。',
-    teamProduction: 1,
-    position: 'Planning, FrontEnd',
-    usetime: 20,
-    season: '2年前期',
-    programmingLanguages: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
-    toolsUsed: 'HTML5, CSS3, Sass, Docker, Laravel, Vue',
-    githubLink: [
-      {
-        name: 'LP',
-        url: 'https://github.com/OkazakiRui/ECCApp-LP',
-      },
-    ],
-    productionLink: [
-      {
-        name: 'LP',
-        url: 'https://click.ecc.ac.jp/ecc/rokazaki/works/ECCApp-LP/',
-      },
-    ],
-    img: ECCImg,
-    logo: ECC,
-  },
-  {
-    id: 5,
     title: 'NONST',
     description:
       '社会人になってストレスが溜まり、中高の友達とも疎遠になっていて愚痴る相手が居ない。を解決するマッチングアプリです。',
@@ -191,7 +163,7 @@ export const worksData: WorkDataType[] = [
     logo: NONST,
   },
   {
-    id: 6,
+    id: 5,
     title: 'portfolio React',
     description:
       '過去に作ったポートフォリオサイトを一部デザイン変更し、リニューアルしました。',
@@ -218,7 +190,7 @@ export const worksData: WorkDataType[] = [
     logo: portfolio,
   },
   {
-    id: 7,
+    id: 6,
     title: 'うみとこころとぼく',
     description:
       '普段からSNSを運用していると、ふとした発言が誰かを傷つけてしまったり、少し前の自分の投稿すらも過度に気にしてしまい、なんてことない呟きすらも億劫になってしまいます。<br />SNSで疲れた現代人が、ゆったりまったりとした世界観でリラックスできるSNSがあったらいいなと思い、このサービスを作成しました。',
